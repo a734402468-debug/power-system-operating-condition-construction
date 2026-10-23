@@ -1,0 +1,340 @@
+{
+  "policy": "Only private local filesystem roots and credential values are redacted. No request condition, electrical value, numerical candidate, score, or token count is intentionally changed. Runtime/account/credential files and full network models are not selected.",
+  "files": [
+    {
+      "file": "data/supplement/source_load_existing.csv",
+      "count": 6,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/supplement/L4_physical_failure_detail.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/restoration_summary.csv",
+      "count": 6,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/continuation_protocol.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/electrical_acceptance.csv",
+      "count": 270,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/physical_observation_ledger.json",
+      "count": 16,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/voltage_observations.csv",
+      "count": 66,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/request_attempt_ledger.json",
+      "count": 24,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/load_allocations.csv",
+      "count": 66,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/case_results.csv",
+      "count": 11,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/old_definition/evaluation_rules.json",
+      "count": 2,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/case_results.json",
+      "count": 11,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/physical_observation_ledger.json",
+      "count": 16,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/trajectories/N-T2_B/http_request_body.utf8",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/trajectories/N-T3_B/http_request_body.utf8",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/trajectories/N-T1_B/http_request_body.utf8",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/trajectories/N-T2_P/http_request_body.utf8",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/trajectories/N-T1_P/http_request_body.utf8",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/new_requirements/trajectories/N-T3_P/http_request_body.utf8",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/case_results.json",
+      "count": 12,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/case_results.csv",
+      "count": 12,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/repeatability_results.json",
+      "count": 9,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/repeatability_results.csv",
+      "count": 9,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/physical_observation_ledger.csv",
+      "count": 18,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/L4_physical_failure_detail.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/historical_evaluation_rules.json",
+      "count": 2,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_L4_r1/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_L4_r1/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_T2_r2/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_T2_r2/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_V4_r1/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_V4_r1/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_T2_r3/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_T2_r3/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_L3_r1/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_L3_r1/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_L2_r1/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_L2_r1/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_L3_r2/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_L3_r2/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_L3_r3/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_L3_r3/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_T1_r1/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_T1_r1/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_T2_r1/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_T2_r1/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_T4_r1/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_T4_r1/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_L1_r1/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_L1_r1/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_T3_r1/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_T3_r1/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_V3_r1/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_V3_r1/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_V3_r3/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_V3_r3/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_V3_r2/shared_physical_evidence.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/codex/trajectories/GPT_V3_r2/reuse_provenance_review.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/main_api/evaluation_rules.json",
+      "count": 2,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/api_comparison/case_results.json",
+      "count": 20,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/api_comparison/case_results.csv",
+      "count": 19,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/api_comparison/repeatability_results.json",
+      "count": 16,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/api_comparison/repeatability_results.csv",
+      "count": 16,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/api_comparison/protocol.json",
+      "count": 1,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/api_comparison/historical_evaluation_rules.json",
+      "count": 2,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/source_load/case_results.json",
+      "count": 17,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    },
+    {
+      "file": "data/source_load/case_results.csv",
+      "count": 2,
+      "rules": "private local roots and/or credential values replaced; electrical values unchanged"
+    }
+  ]
+}

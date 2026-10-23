@@ -1,0 +1,89 @@
+{
+  "id": "V1",
+  "grid": "CG",
+  "family": "voltage",
+  "A": [
+    "L1",
+    "L2"
+  ],
+  "B": [
+    "L4"
+  ],
+  "fixed": [
+    "L3",
+    "L5",
+    "L6"
+  ],
+  "adjustable": [
+    "L1",
+    "L2",
+    "L4"
+  ],
+  "bounds": [
+    1.0,
+    1.2
+  ],
+  "purpose": "构造101 Wythe电压降低0.001至0.0015 pu的稳态测试状态，用于比较电压敏感算法输入。",
+  "history": "明确复用已成功CG-G1开发任务结构与电压带；本批仅是统一冻结版重复构造，不称新盲测。",
+  "voltage_bands": {
+    "V1": {
+      "lower": 1.0119999877014882,
+      "upper": 1.021999987701488,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "保持原观察电压，不修复已有越限"
+    },
+    "V2": {
+      "lower": 0.9848850130726581,
+      "upper": 0.985385013072658,
+      "stages": [
+        "final"
+      ],
+      "purpose": "指定电压目标；约为已归档1%负荷响应量级的数倍，非严重低电压或安全判据",
+      "delta_design": [
+        -0.0015,
+        -0.001
+      ],
+      "primary_acceptance": "absolute_endpoints"
+    },
+    "V3": {
+      "lower": 0.9792397545453265,
+      "upper": 0.9832397545453265,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "保持102电压变化不超过0.002 pu",
+      "delta_design": [
+        -0.002,
+        0.002
+      ],
+      "primary_acceptance": "absolute_endpoints"
+    },
+    "V4": {
+      "lower": 1.0050000181018235,
+      "upper": 1.0150000181018233,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "保持原观察电压，不修复已有越限"
+    },
+    "V5": {
+      "lower": 0.9660000425318596,
+      "upper": 0.9760000425318596,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "保持原观察电压，不修复已有越限"
+    },
+    "V6": {
+      "lower": 0.9600000003123973,
+      "upper": 0.9700000003123973,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "保持原观察电压，不修复已有越限"
+    }
+  },
+  "status": "controlled_engineering_research_requirement"
+}

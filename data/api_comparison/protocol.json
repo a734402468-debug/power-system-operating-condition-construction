@@ -1,0 +1,375 @@
+{
+  "version": "three-backend-applicability-v1",
+  "execution_version": "three-backend-dispatch-v1",
+  "historical_protocol": "<PROJECT_ROOT>\\artifacts\\paper_formal_cases_v1\\20261017_batch01\\protocol.json",
+  "tasks": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+  ],
+  "models": {
+    "DS": "deepseek-ai/DeepSeek-V4-Pro",
+    "Q122": "Qwen/Qwen3.5-122B-A10B",
+    "Q35": "Qwen/Qwen3.5-35B-A3B"
+  },
+  "config": {
+    "endpoint": "https://api.siliconflow.cn/v1/chat/completions",
+    "model": "per registered model, shared strategy",
+    "credential_environment": "DEEPSEEK_API_KEY",
+    "enable_thinking": false,
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096,
+    "stream": true,
+    "total_wall_seconds": 180,
+    "network_idle_seconds": 60
+  },
+  "parameter_difference": "Only request.model for Qwen; same messages and all other generation fields",
+  "schedule": [
+    {
+      "id": "Q122_T1_r1",
+      "task": "T1",
+      "model": "Q122",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q35_T1_r1",
+      "task": "T1",
+      "model": "Q35",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q35_T2_r1",
+      "task": "T2",
+      "model": "Q35",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q122_T2_r1",
+      "task": "T2",
+      "model": "Q122",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q122_T3_r1",
+      "task": "T3",
+      "model": "Q122",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q35_T3_r1",
+      "task": "T3",
+      "model": "Q35",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q35_T4_r1",
+      "task": "T4",
+      "model": "Q35",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q122_T4_r1",
+      "task": "T4",
+      "model": "Q122",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q122_V1_r1",
+      "task": "V1",
+      "model": "Q122",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q35_V1_r1",
+      "task": "V1",
+      "model": "Q35",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q35_V2_r1",
+      "task": "V2",
+      "model": "Q35",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q122_V2_r1",
+      "task": "V2",
+      "model": "Q122",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q122_V3_r1",
+      "task": "V3",
+      "model": "Q122",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q35_V3_r1",
+      "task": "V3",
+      "model": "Q35",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q35_V4_r1",
+      "task": "V4",
+      "model": "Q35",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q122_V4_r1",
+      "task": "V4",
+      "model": "Q122",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q122_L1_r1",
+      "task": "L1",
+      "model": "Q122",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q35_L1_r1",
+      "task": "L1",
+      "model": "Q35",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q35_L2_r1",
+      "task": "L2",
+      "model": "Q35",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q122_L2_r1",
+      "task": "L2",
+      "model": "Q122",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q122_L3_r1",
+      "task": "L3",
+      "model": "Q122",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q35_L3_r1",
+      "task": "L3",
+      "model": "Q35",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q35_L4_r1",
+      "task": "L4",
+      "model": "Q35",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "Q122_L4_r1",
+      "task": "L4",
+      "model": "Q122",
+      "repeat": 1,
+      "phase": "main"
+    },
+    {
+      "id": "DS_T2_r2",
+      "task": "T2",
+      "model": "DS",
+      "repeat": 2,
+      "phase": "repeatability"
+    },
+    {
+      "id": "Q122_T2_r2",
+      "task": "T2",
+      "model": "Q122",
+      "repeat": 2,
+      "phase": "repeatability"
+    },
+    {
+      "id": "Q35_T2_r2",
+      "task": "T2",
+      "model": "Q35",
+      "repeat": 2,
+      "phase": "repeatability"
+    },
+    {
+      "id": "Q35_T2_r3",
+      "task": "T2",
+      "model": "Q35",
+      "repeat": 3,
+      "phase": "repeatability"
+    },
+    {
+      "id": "Q122_T2_r3",
+      "task": "T2",
+      "model": "Q122",
+      "repeat": 3,
+      "phase": "repeatability"
+    },
+    {
+      "id": "DS_T2_r3",
+      "task": "T2",
+      "model": "DS",
+      "repeat": 3,
+      "phase": "repeatability"
+    },
+    {
+      "id": "DS_V3_r2",
+      "task": "V3",
+      "model": "DS",
+      "repeat": 2,
+      "phase": "repeatability"
+    },
+    {
+      "id": "Q122_V3_r2",
+      "task": "V3",
+      "model": "Q122",
+      "repeat": 2,
+      "phase": "repeatability"
+    },
+    {
+      "id": "Q35_V3_r2",
+      "task": "V3",
+      "model": "Q35",
+      "repeat": 2,
+      "phase": "repeatability"
+    },
+    {
+      "id": "Q35_V3_r3",
+      "task": "V3",
+      "model": "Q35",
+      "repeat": 3,
+      "phase": "repeatability"
+    },
+    {
+      "id": "Q122_V3_r3",
+      "task": "V3",
+      "model": "Q122",
+      "repeat": 3,
+      "phase": "repeatability"
+    },
+    {
+      "id": "DS_V3_r3",
+      "task": "V3",
+      "model": "DS",
+      "repeat": 3,
+      "phase": "repeatability"
+    },
+    {
+      "id": "DS_L3_r2",
+      "task": "L3",
+      "model": "DS",
+      "repeat": 2,
+      "phase": "repeatability"
+    },
+    {
+      "id": "Q122_L3_r2",
+      "task": "L3",
+      "model": "Q122",
+      "repeat": 2,
+      "phase": "repeatability"
+    },
+    {
+      "id": "Q35_L3_r2",
+      "task": "L3",
+      "model": "Q35",
+      "repeat": 2,
+      "phase": "repeatability"
+    },
+    {
+      "id": "Q35_L3_r3",
+      "task": "L3",
+      "model": "Q35",
+      "repeat": 3,
+      "phase": "repeatability"
+    },
+    {
+      "id": "Q122_L3_r3",
+      "task": "L3",
+      "model": "Q122",
+      "repeat": 3,
+      "phase": "repeatability"
+    },
+    {
+      "id": "DS_L3_r3",
+      "task": "L3",
+      "model": "DS",
+      "repeat": 3,
+      "phase": "repeatability"
+    }
+  ],
+  "repetitions": {
+    "tasks": [
+      "T2",
+      "V3",
+      "L3"
+    ],
+    "runs_per_model_task": 3,
+    "run_1": "historical DeepSeek / new Qwen main result",
+    "extra_runs": 18
+  },
+  "budgets": {
+    "new_formal_first_trajectories": 42,
+    "formal_requests_max": 84,
+    "compatibility_max": 4,
+    "all_requests_max": 88,
+    "new_physical_observations_max": 42,
+    "normal_AC_max": 126,
+    "exceptional_recovery_AC_max": 6,
+    "total_AC_max": 132
+  },
+  "repair": "one only after complete response and retained public parser/baseline/binding/own-local-solver diagnosis; no isolated scoring feedback",
+  "service_stop": "three consecutive service failures pauses that model; no retry; shared authentication/evidence failure pauses affected calls",
+  "unchanged_method": true,
+  "physical_feedback": false,
+  "new_response_sampling": false,
+  "one_candidate_per_trajectory": true,
+  "physical_sharing": "Same task, complete requested P/Q and alphas, model/Study Case, baseline and other inputs, topology/fixed controls/flow, line metadata, stage requirements; independently evaluate actual record for current spec and original",
+  "semantic_admission": "Retained finite certifier with isolated correct specs; unresolved not accepted. No new equivalence rules.",
+  "DeepSeek_historical": {
+    "first": 7,
+    "final": 8,
+    "denominator": 12,
+    "unchanged": true,
+    "requested_model": "deepseek-ai/DeepSeek-V4-Pro",
+    "precise_revision": "unknown; server revisions between dates cannot be confirmed"
+  },
+  "compatibility": {
+    "Q122": true,
+    "Q35": true
+  },
+  "no_GPT": true,
+  "no_parameter_scanning": true
+}

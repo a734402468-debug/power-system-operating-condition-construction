@@ -1,0 +1,177 @@
+{
+  "scope": "Read-only extraction of archived settings; no new simulation, model call, or outcome reclassification.",
+  "document_reference": {
+    "author": "DIgSILENT GmbH",
+    "title": "DIgSILENT PowerFactory 15 User Manual",
+    "edition": "Online edition, October 2015, r2216",
+    "relevant_sections": {
+      "21.3.4, p.450": "Load-flow node/model-equation error tolerances and inner/outer iteration limits.",
+      "26.3.3.2, p.568": "Explicitly identifies errlf as the maximum allowable load-flow error for each bus."
+    },
+    "source_archive_relative_path": "existing_evidence/evaluator_only/artifacts/physical_response_range_v1/20261013_170522_641219_93ac641f/local_docs/user_manual.txt",
+    "text_sha256": "e6de1cd7970a6c2d787a212b90a5e72df97fa7701d21d1ddf2f6913212c4c2b7",
+    "redistribution": "Do not redistribute the manual text in the public repository; cite its bibliographic information and sections."
+  },
+  "grids": {
+    "CG": {
+      "source_record": "gpt_codex_supplement_v1/20261021_batch01/grids/CG/baseline_record.json",
+      "source_sha256": "e32f6d6be52b3cae5b951fe96e104a1a28cb563bc975e23a4ca3e12bb79b0f8d",
+      "fields": {
+        "errlf": {
+          "value": 1.0,
+          "unit": "kVA",
+          "description": ""
+        },
+        "erreq": {
+          "value": 0.10000000149011612,
+          "unit": "%",
+          "description": ""
+        },
+        "itrlx": {
+          "value": 25,
+          "unit": "",
+          "description": ""
+        },
+        "ictrlx": {
+          "value": 20,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_net": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_lim": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_plim": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_at": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_asht": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_pq": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_fls": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_apdist": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iPbalancing": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "scLoadFac": {
+          "value": 100.0,
+          "unit": "%",
+          "description": ""
+        }
+      },
+      "before_after_match": true
+    },
+    "NJ": {
+      "source_record": "gpt_codex_supplement_v1/20261021_batch01/grids/NJ/baseline_record.json",
+      "source_sha256": "30f6082f3d9dab97f97a086997aad04c4a418eb40801108f16c7ca88153fd268",
+      "fields": {
+        "errlf": {
+          "value": 1.0,
+          "unit": "kVA",
+          "description": ""
+        },
+        "erreq": {
+          "value": 0.10000000149011612,
+          "unit": "%",
+          "description": ""
+        },
+        "itrlx": {
+          "value": 25,
+          "unit": "",
+          "description": ""
+        },
+        "ictrlx": {
+          "value": 20,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_net": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_lim": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_plim": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_at": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_asht": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_pq": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_fls": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iopt_apdist": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "iPbalancing": {
+          "value": 0,
+          "unit": "",
+          "description": ""
+        },
+        "scLoadFac": {
+          "value": 100.0,
+          "unit": "%",
+          "description": ""
+        }
+      },
+      "before_after_match": true
+    }
+  },
+  "interpretation": {
+    "node_error": "The documented definition of errlf and the archived kVA unit support a recorded node-equation tolerance of 1 kVA.",
+    "other_controls": "erreq, itrlx, and ictrlx values and returned units are exact archive observations. Section 21.3.4 gives corresponding model-equation and iteration concepts, but the archive returned empty field descriptions. Direct ComLdf field-to-UI mappings beyond errlf are not claimed as independently confirmed.",
+    "iopt_options": "Numeric options are preserved without inferring Boolean or enumerated meanings from their names.",
+    "acceptance": "Solver residual tolerances do not directly bound the error of every branch result. The original task tolerances and strict endpoint tests are unchanged."
+  }
+}

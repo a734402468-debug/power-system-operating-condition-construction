@@ -1,0 +1,75 @@
+{
+  "formal": {
+    "planned_main": 12,
+    "planned_trajectories": 18,
+    "first_strict_success": 11,
+    "final_strict_success": 11,
+    "main_sent": 12,
+    "all_sent": 18,
+    "CLI_formal_starts": 18,
+    "formal_known_tokens": 284355,
+    "formal_unknown_usage_attempts": 0,
+    "new_AC": 6,
+    "PF_connections": 2,
+    "model_target_solves": 18,
+    "online_block": false,
+    "physical_block": false,
+    "new_independent_observations": 2,
+    "historical_reuse_trajectories": 16,
+    "this_batch_shared_trajectories": 0,
+    "visible_formal_retries": 72,
+    "visible_formal_tool_calls": 0,
+    "native_candidate_verifications": 2,
+    "formal_CLI_wall_seconds": 2033.0149999995483,
+    "main_complete_returns": 12,
+    "main_first_contract": 12,
+    "main_first_semantic_certified": 12,
+    "main_candidates": 12,
+    "main_physical_unmet": 1,
+    "main_physical_not_executed": 0
+  },
+  "probes": [
+    {
+      "probe": "probe_1",
+      "CLI_starts": 1,
+      "seconds": 122.56200000003446,
+      "usage": {
+        "input_tokens": 18702,
+        "cached_input_tokens": 16640,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 95,
+        "reasoning_output_tokens": 12
+      },
+      "original_status": "protocol_tool_event",
+      "source": "compatibility\\probe_1\\result.json",
+      "classification_note": "Probe1 warning/error reclassification retained separately; not a formal trajectory"
+    },
+    {
+      "probe": "probe_2",
+      "CLI_starts": 1,
+      "seconds": 125.46899999992456,
+      "usage": {
+        "input_tokens": 17800,
+        "cached_input_tokens": 16256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 140,
+        "reasoning_output_tokens": 62
+      },
+      "original_status": "complete",
+      "source": "compatibility\\probe_2\\result.json",
+      "classification_note": "Probe1 warning/error reclassification retained separately; not a formal trajectory"
+    }
+  ],
+  "total_CLI_starts": 20,
+  "formal_input_tokens": 264924,
+  "formal_output_tokens": 19431,
+  "formal_reasoning_tokens_subset": 1516,
+  "probe_known_tokens": 36737,
+  "visible_formal_sessions": 18,
+  "visible_formal_turns": 18,
+  "bottom_level_requests": "unknown",
+  "money": "unknown",
+  "formal_batch_wall_seconds": 2848.292439699173,
+  "timing_policy": "CLI sums, batch wall time, numerical and PF timing are different and potentially nested; do not add them as total elapsed",
+  "human_time": "not_measured"
+}

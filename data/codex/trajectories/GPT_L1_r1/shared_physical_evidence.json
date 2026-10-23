@@ -1,0 +1,1830 @@
+{
+  "status": "passed",
+  "shared": true,
+  "historical": true,
+  "observation_source": "<PROJECT_ROOT>\\artifacts\\paper_formal_cases_v1\\20261017_batch01\\L1\\physical",
+  "binding": {
+    "project": true,
+    "study_case": true,
+    "complete_requested_PQ": true,
+    "alphas": true,
+    "baseline_inputs": true,
+    "all_load_inputs": true,
+    "controls": true,
+    "flow": true,
+    "baseline_all_key_results": true,
+    "topology_and_fixed_context": true,
+    "reference_response": true,
+    "reference_controls": true,
+    "permission": true,
+    "bounds": true,
+    "original_stages": true,
+    "restoration": true,
+    "source_unchanged": true,
+    "line_metadata": true,
+    "valid_actual_record": true
+  },
+  "valid": true,
+  "original_all": true,
+  "generated_all": true,
+  "acceptance": {
+    "valid": true,
+    "phase": "final",
+    "phase_satisfied": true,
+    "baseline_conditions": true,
+    "process_conditions": true,
+    "all_requirements": true,
+    "checks": [
+      {
+        "constraint_id": "r1__stage_final::0",
+        "type": "line_loading_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Yonga-Jinx.ElmLne"
+        ],
+        "clause": "C1",
+        "unit": "percent",
+        "tolerance": 0.0,
+        "timing": "final",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 12.842631118996916,
+          "upper": 12.906208500774126
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          12.842641000066735
+        ],
+        "error": [
+          -9.881069818362676e-06
+        ],
+        "margin": 9.881069818362676e-06,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "r1__stage_final::0::0",
+            "type": "line_loading_bounds",
+            "clause": "C1",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Yonga-Jinx.ElmLne"
+            ],
+            "unit": "percent",
+            "timing": "final",
+            "target_or_range": {
+              "lower": 12.842631118996916,
+              "upper": 12.906208500774126
+            },
+            "tolerance": 0.0,
+            "source": "actual_PF",
+            "current_value": 12.842641000066735,
+            "error": -9.881069818362676e-06,
+            "margin": 9.881069818362676e-06,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "r3__stage_every_accepted_state::0",
+        "type": "active_power_sum",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+        ],
+        "clause": "C3",
+        "unit": "MW",
+        "tolerance": 2.388818359375e-05,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "value": 413.2999954223633
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          413.30000495910645
+        ],
+        "error": [
+          9.5367431640625e-06
+        ],
+        "margin": 1.43514404296875e-05,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "r3__stage_every_accepted_state::0::0",
+            "type": "active_power_sum",
+            "clause": "C3",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+            ],
+            "unit": "MW",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "value": 413.2999954223633
+            },
+            "tolerance": 2.388818359375e-05,
+            "source": "actual_PF",
+            "current_value": 413.30000495910645,
+            "error": 9.5367431640625e-06,
+            "margin": 1.43514404296875e-05,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "r4__stage_every_accepted_state::0",
+        "type": "baseline_qp",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+        ],
+        "clause": "C4",
+        "unit": "Mvar",
+        "tolerance": 9.794873805516215e-06,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {},
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          {
+            "P_MW": 258.233154296875,
+            "Q_Mvar": 84.28235626220703,
+            "Q_over_P": 0.3263808494757134
+          },
+          {
+            "P_MW": 72.1030044555664,
+            "Q_Mvar": 49.28048324584961,
+            "Q_over_P": 0.6834733672744356
+          },
+          {
+            "P_MW": 50.97406005859375,
+            "Q_Mvar": 10.694557189941406,
+            "Q_over_P": 0.20980391159048756
+          },
+          {
+            "P_MW": 31.98978614807129,
+            "Q_Mvar": -3.598850727081299,
+            "Q_over_P": -0.1124999932923365
+          }
+        ],
+        "error": [
+          -6.26466487574362e-08,
+          2.314887623811046e-07,
+          -3.1798845157027245e-07,
+          1.192397292015812e-07
+        ],
+        "margin": 9.476885353945942e-06,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "r4__stage_every_accepted_state::0::0",
+            "type": "qp_ratio",
+            "clause": "C4",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod"
+            ],
+            "unit": "Mvar",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "ratio": 0.3263808497183106
+            },
+            "tolerance": 9.794873805516215e-06,
+            "source": "actual_PF",
+            "current_value": {
+              "P_MW": 258.233154296875,
+              "Q_Mvar": 84.28235626220703,
+              "Q_over_P": 0.3263808494757134
+            },
+            "error": -6.26466487574362e-08,
+            "margin": 9.732227156758778e-06,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          },
+          {
+            "constraint_id": "r4__stage_every_accepted_state::0::1",
+            "type": "qp_ratio",
+            "clause": "C4",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod"
+            ],
+            "unit": "Mvar",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "ratio": 0.683473364063907
+            },
+            "tolerance": 9.794873805516215e-06,
+            "source": "actual_PF",
+            "current_value": {
+              "P_MW": 72.1030044555664,
+              "Q_Mvar": 49.28048324584961,
+              "Q_over_P": 0.6834733672744356
+            },
+            "error": 2.314887623811046e-07,
+            "margin": 9.56338504313511e-06,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          },
+          {
+            "constraint_id": "r4__stage_every_accepted_state::0::2",
+            "type": "qp_ratio",
+            "clause": "C4",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod"
+            ],
+            "unit": "Mvar",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "ratio": 0.20980391782872818
+            },
+            "tolerance": 9.794873805516215e-06,
+            "source": "actual_PF",
+            "current_value": {
+              "P_MW": 50.97406005859375,
+              "Q_Mvar": 10.694557189941406,
+              "Q_over_P": 0.20980391159048756
+            },
+            "error": -3.1798845157027245e-07,
+            "margin": 9.476885353945942e-06,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          },
+          {
+            "constraint_id": "r4__stage_every_accepted_state::0::3",
+            "type": "qp_ratio",
+            "clause": "C4",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+            ],
+            "unit": "Mvar",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "ratio": -0.11249999701976776
+            },
+            "tolerance": 9.794873805516215e-06,
+            "source": "actual_PF",
+            "current_value": {
+              "P_MW": 31.98978614807129,
+              "Q_Mvar": -3.598850727081299,
+              "Q_over_P": -0.1124999932923365
+            },
+            "error": 1.192397292015812e-07,
+            "margin": 9.675634076314633e-06,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "r5__stage_every_accepted_state::0",
+        "type": "alpha_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+        ],
+        "clause": "C5",
+        "unit": "dimensionless",
+        "tolerance": 1e-07,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 0.99,
+          "upper": 1.02
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          {
+            "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod": 0.9974243352053689,
+            "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod": 1.009845979196971,
+            "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod": 0.9994913736979166,
+            "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod": 0.9996808171272278
+          }
+        ],
+        "error": [
+          -0.007424335205368893
+        ],
+        "margin": 0.007424435205368893,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "r5__stage_every_accepted_state::0::0",
+            "type": "alpha_bounds",
+            "clause": "C5",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+            ],
+            "unit": "dimensionless",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "lower": 0.99,
+              "upper": 1.02
+            },
+            "tolerance": 1e-07,
+            "source": "actual_PF",
+            "current_value": {
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod": 0.9974243352053689,
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod": 1.009845979196971,
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod": 0.9994913736979166,
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod": 0.9996808171272278
+            },
+            "error": -0.007424335205368893,
+            "margin": 0.007424435205368893,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "r6__stage_every_accepted_state::0",
+        "type": "voltage_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm"
+        ],
+        "clause": "C6",
+        "unit": "pu",
+        "tolerance": 0.0,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 0.9911242876845122,
+          "upper": 1.0011242876845121
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          0.9961603110482798
+        ],
+        "error": [
+          -0.00496397663623227
+        ],
+        "margin": 0.00496397663623227,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "r6__stage_every_accepted_state::0::0",
+            "type": "voltage_bounds",
+            "clause": "C6",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm"
+            ],
+            "unit": "pu",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "lower": 0.9911242876845122,
+              "upper": 1.0011242876845121
+            },
+            "tolerance": 0.0,
+            "source": "actual_PF",
+            "current_value": 0.9961603110482798,
+            "error": -0.00496397663623227,
+            "margin": 0.00496397663623227,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "r7__stage_every_accepted_state::0",
+        "type": "voltage_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm"
+        ],
+        "clause": "C6",
+        "unit": "pu",
+        "tolerance": 0.0,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 0.9945953542043262,
+          "upper": 1.0045953542043262
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          0.9994421518834672
+        ],
+        "error": [
+          -0.0048467976791409795
+        ],
+        "margin": 0.0048467976791409795,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "r7__stage_every_accepted_state::0::0",
+            "type": "voltage_bounds",
+            "clause": "C6",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm"
+            ],
+            "unit": "pu",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "lower": 0.9945953542043262,
+              "upper": 1.0045953542043262
+            },
+            "tolerance": 0.0,
+            "source": "actual_PF",
+            "current_value": 0.9994421518834672,
+            "error": -0.0048467976791409795,
+            "margin": 0.0048467976791409795,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "r8__stage_every_accepted_state::0",
+        "type": "voltage_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm"
+        ],
+        "clause": "C6",
+        "unit": "pu",
+        "tolerance": 0.0,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 0.995860618120925,
+          "upper": 1.0058606181209249
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          1.000872101589899
+        ],
+        "error": [
+          -0.004988516531025944
+        ],
+        "margin": 0.004988516531025944,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "r8__stage_every_accepted_state::0::0",
+            "type": "voltage_bounds",
+            "clause": "C6",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm"
+            ],
+            "unit": "pu",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "lower": 0.995860618120925,
+              "upper": 1.0058606181209249
+            },
+            "tolerance": 0.0,
+            "source": "actual_PF",
+            "current_value": 1.000872101589899,
+            "error": -0.004988516531025944,
+            "margin": 0.004988516531025944,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "r9__stage_every_accepted_state::0",
+        "type": "voltage_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm"
+        ],
+        "clause": "C6",
+        "unit": "pu",
+        "tolerance": 0.0,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 1.0133168288134877,
+          "upper": 1.0233168288134875
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          1.0182991118066334
+        ],
+        "error": [
+          -0.004982282993145626
+        ],
+        "margin": 0.004982282993145626,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "r9__stage_every_accepted_state::0::0",
+            "type": "voltage_bounds",
+            "clause": "C6",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm"
+            ],
+            "unit": "pu",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "lower": 1.0133168288134877,
+              "upper": 1.0233168288134875
+            },
+            "tolerance": 0.0,
+            "source": "actual_PF",
+            "current_value": 1.0182991118066334,
+            "error": -0.004982282993145626,
+            "margin": 0.004982282993145626,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      }
+    ],
+    "context_guards": {
+      "valid_AC_identity_settings_controls": true,
+      "other_load_inputs_unchanged": true,
+      "requested_context_guards": true
+    },
+    "values_pu": {
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm": 0.9961603110482798,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm": 0.9994421518834672,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm": 1.000872101589899,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm": 1.0182991118066334
+    },
+    "target_residuals_pu": {},
+    "baseline_values_pu": {
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm": 0.9961242876845122,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm": 0.9995953542043262,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm": 1.000860618120925,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm": 1.0183168288134876
+    },
+    "voltage_sources": {
+      "original_baseline": {
+        "state_role": "original_baseline",
+        "source": "raw_PF_result_snapshot",
+        "valid": true,
+        "record_label": "baseline_confirmation",
+        "ac_flow_number": 1,
+        "values_pu": {
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm": 0.9961242876845122,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm": 0.9995953542043262,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm": 1.000860618120925,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm": 1.0183168288134876
+        }
+      },
+      "evaluated_actual_state": {
+        "state_role": "evaluated_actual_state",
+        "source": "raw_PF_result_snapshot",
+        "valid": true,
+        "record_label": "scenario_candidate_0001",
+        "ac_flow_number": 2,
+        "values_pu": {
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm": 0.9961603110482798,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm": 0.9994421518834672,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm": 1.000872101589899,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm": 1.0182991118066334
+        }
+      }
+    },
+    "R": 0.0,
+    "generated_spec_sha256": "6eb91c84916a3882711c7af0ce8b1f9ccb10868e0502701ba5b22c641adf81cc",
+    "source": "actual_PF",
+    "input_setpoints_only_not_system_balance": true
+  },
+  "baseline_admission": {
+    "valid": true,
+    "phase": "baseline",
+    "phase_satisfied": true,
+    "baseline_conditions": true,
+    "process_conditions": true,
+    "all_requirements": false,
+    "checks": [
+      {
+        "constraint_id": "r1__stage_final::0",
+        "type": "line_loading_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Yonga-Jinx.ElmLne"
+        ],
+        "clause": "C1",
+        "unit": "percent",
+        "tolerance": 0.0,
+        "timing": "final",
+        "applicable": false,
+        "target_or_range": {
+          "lower": 12.842631118996916,
+          "upper": 12.906208500774126
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          12.71547635544249
+        ],
+        "error": [
+          0.1271547635544259
+        ],
+        "margin": -0.1271547635544259,
+        "pass": false,
+        "status": "unmet",
+        "details": [
+          {
+            "constraint_id": "r1__stage_final::0::0",
+            "type": "line_loading_bounds",
+            "clause": "C1",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Yonga-Jinx.ElmLne"
+            ],
+            "unit": "percent",
+            "timing": "final",
+            "target_or_range": {
+              "lower": 12.842631118996916,
+              "upper": 12.906208500774126
+            },
+            "tolerance": 0.0,
+            "source": "actual_PF",
+            "current_value": 12.71547635544249,
+            "error": 0.1271547635544259,
+            "margin": -0.1271547635544259,
+            "status": "unmet",
+            "pass": false,
+            "evaluated_on": "current_state",
+            "applicable": false
+          }
+        ]
+      },
+      {
+        "constraint_id": "r3__stage_every_accepted_state::0",
+        "type": "active_power_sum",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+        ],
+        "clause": "C3",
+        "unit": "MW",
+        "tolerance": 2.388818359375e-05,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "value": 413.2999954223633
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          413.2999954223633
+        ],
+        "error": [
+          0.0
+        ],
+        "margin": 2.388818359375e-05,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "r3__stage_every_accepted_state::0::0",
+            "type": "active_power_sum",
+            "clause": "C3",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+            ],
+            "unit": "MW",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "value": 413.2999954223633
+            },
+            "tolerance": 2.388818359375e-05,
+            "source": "actual_PF",
+            "current_value": 413.2999954223633,
+            "error": 0.0,
+            "margin": 2.388818359375e-05,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "r4__stage_every_accepted_state::0",
+        "type": "baseline_qp",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+        ],
+        "clause": "C4",
+        "unit": "Mvar",
+        "tolerance": 9.794873805516215e-06,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {},
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          {
+            "P_MW": 258.8999938964844,
+            "Q_Mvar": 84.5,
+            "Q_over_P": 0.3263808497183106
+          },
+          {
+            "P_MW": 71.4000015258789,
+            "Q_Mvar": 48.79999923706055,
+            "Q_over_P": 0.683473364063907
+          },
+          {
+            "P_MW": 51.0,
+            "Q_Mvar": 10.699999809265137,
+            "Q_over_P": 0.20980391782872818
+          },
+          {
+            "P_MW": 32.0,
+            "Q_Mvar": -3.5999999046325684,
+            "Q_over_P": -0.11249999701976776
+          }
+        ],
+        "error": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "margin": 9.794873805516215e-06,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "r4__stage_every_accepted_state::0::0",
+            "type": "qp_ratio",
+            "clause": "C4",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod"
+            ],
+            "unit": "Mvar",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "ratio": 0.3263808497183106
+            },
+            "tolerance": 9.794873805516215e-06,
+            "source": "actual_PF",
+            "current_value": {
+              "P_MW": 258.8999938964844,
+              "Q_Mvar": 84.5,
+              "Q_over_P": 0.3263808497183106
+            },
+            "error": 0.0,
+            "margin": 9.794873805516215e-06,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          },
+          {
+            "constraint_id": "r4__stage_every_accepted_state::0::1",
+            "type": "qp_ratio",
+            "clause": "C4",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod"
+            ],
+            "unit": "Mvar",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "ratio": 0.683473364063907
+            },
+            "tolerance": 9.794873805516215e-06,
+            "source": "actual_PF",
+            "current_value": {
+              "P_MW": 71.4000015258789,
+              "Q_Mvar": 48.79999923706055,
+              "Q_over_P": 0.683473364063907
+            },
+            "error": 0.0,
+            "margin": 9.794873805516215e-06,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          },
+          {
+            "constraint_id": "r4__stage_every_accepted_state::0::2",
+            "type": "qp_ratio",
+            "clause": "C4",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod"
+            ],
+            "unit": "Mvar",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "ratio": 0.20980391782872818
+            },
+            "tolerance": 9.794873805516215e-06,
+            "source": "actual_PF",
+            "current_value": {
+              "P_MW": 51.0,
+              "Q_Mvar": 10.699999809265137,
+              "Q_over_P": 0.20980391782872818
+            },
+            "error": 0.0,
+            "margin": 9.794873805516215e-06,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          },
+          {
+            "constraint_id": "r4__stage_every_accepted_state::0::3",
+            "type": "qp_ratio",
+            "clause": "C4",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+            ],
+            "unit": "Mvar",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "ratio": -0.11249999701976776
+            },
+            "tolerance": 9.794873805516215e-06,
+            "source": "actual_PF",
+            "current_value": {
+              "P_MW": 32.0,
+              "Q_Mvar": -3.5999999046325684,
+              "Q_over_P": -0.11249999701976776
+            },
+            "error": 0.0,
+            "margin": 9.794873805516215e-06,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "r5__stage_every_accepted_state::0",
+        "type": "alpha_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+        ],
+        "clause": "C5",
+        "unit": "dimensionless",
+        "tolerance": 1e-07,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 0.99,
+          "upper": 1.02
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          {
+            "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod": 1.0,
+            "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod": 1.0,
+            "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod": 1.0,
+            "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod": 1.0
+          }
+        ],
+        "error": [
+          -0.010000000000000009
+        ],
+        "margin": 0.010000100000000008,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "r5__stage_every_accepted_state::0::0",
+            "type": "alpha_bounds",
+            "clause": "C5",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+            ],
+            "unit": "dimensionless",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "lower": 0.99,
+              "upper": 1.02
+            },
+            "tolerance": 1e-07,
+            "source": "actual_PF",
+            "current_value": {
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod": 1.0,
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod": 1.0,
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod": 1.0,
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod": 1.0
+            },
+            "error": -0.010000000000000009,
+            "margin": 0.010000100000000008,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "r6__stage_every_accepted_state::0",
+        "type": "voltage_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm"
+        ],
+        "clause": "C6",
+        "unit": "pu",
+        "tolerance": 0.0,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 0.9911242876845122,
+          "upper": 1.0011242876845121
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          0.9961242876845122
+        ],
+        "error": [
+          -0.004999999999999893
+        ],
+        "margin": 0.004999999999999893,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "r6__stage_every_accepted_state::0::0",
+            "type": "voltage_bounds",
+            "clause": "C6",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm"
+            ],
+            "unit": "pu",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "lower": 0.9911242876845122,
+              "upper": 1.0011242876845121
+            },
+            "tolerance": 0.0,
+            "source": "actual_PF",
+            "current_value": 0.9961242876845122,
+            "error": -0.004999999999999893,
+            "margin": 0.004999999999999893,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "r7__stage_every_accepted_state::0",
+        "type": "voltage_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm"
+        ],
+        "clause": "C6",
+        "unit": "pu",
+        "tolerance": 0.0,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 0.9945953542043262,
+          "upper": 1.0045953542043262
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          0.9995953542043262
+        ],
+        "error": [
+          -0.0050000000000000044
+        ],
+        "margin": 0.0050000000000000044,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "r7__stage_every_accepted_state::0::0",
+            "type": "voltage_bounds",
+            "clause": "C6",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm"
+            ],
+            "unit": "pu",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "lower": 0.9945953542043262,
+              "upper": 1.0045953542043262
+            },
+            "tolerance": 0.0,
+            "source": "actual_PF",
+            "current_value": 0.9995953542043262,
+            "error": -0.0050000000000000044,
+            "margin": 0.0050000000000000044,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "r8__stage_every_accepted_state::0",
+        "type": "voltage_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm"
+        ],
+        "clause": "C6",
+        "unit": "pu",
+        "tolerance": 0.0,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 0.995860618120925,
+          "upper": 1.0058606181209249
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          1.000860618120925
+        ],
+        "error": [
+          -0.004999999999999893
+        ],
+        "margin": 0.004999999999999893,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "r8__stage_every_accepted_state::0::0",
+            "type": "voltage_bounds",
+            "clause": "C6",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm"
+            ],
+            "unit": "pu",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "lower": 0.995860618120925,
+              "upper": 1.0058606181209249
+            },
+            "tolerance": 0.0,
+            "source": "actual_PF",
+            "current_value": 1.000860618120925,
+            "error": -0.004999999999999893,
+            "margin": 0.004999999999999893,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "r9__stage_every_accepted_state::0",
+        "type": "voltage_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm"
+        ],
+        "clause": "C6",
+        "unit": "pu",
+        "tolerance": 0.0,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 1.0133168288134877,
+          "upper": 1.0233168288134875
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          1.0183168288134876
+        ],
+        "error": [
+          -0.004999999999999893
+        ],
+        "margin": 0.004999999999999893,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "r9__stage_every_accepted_state::0::0",
+            "type": "voltage_bounds",
+            "clause": "C6",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm"
+            ],
+            "unit": "pu",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "lower": 1.0133168288134877,
+              "upper": 1.0233168288134875
+            },
+            "tolerance": 0.0,
+            "source": "actual_PF",
+            "current_value": 1.0183168288134876,
+            "error": -0.004999999999999893,
+            "margin": 0.004999999999999893,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      }
+    ],
+    "context_guards": {
+      "valid_AC_identity_settings_controls": true,
+      "other_load_inputs_unchanged": true,
+      "requested_context_guards": true
+    },
+    "values_pu": {
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm": 0.9961242876845122,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm": 0.9995953542043262,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm": 1.000860618120925,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm": 1.0183168288134876
+    },
+    "target_residuals_pu": {},
+    "baseline_values_pu": {
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm": 0.9961242876845122,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm": 0.9995953542043262,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm": 1.000860618120925,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm": 1.0183168288134876
+    },
+    "voltage_sources": {
+      "original_baseline": {
+        "state_role": "original_baseline",
+        "source": "raw_PF_result_snapshot",
+        "valid": true,
+        "record_label": "baseline_confirmation",
+        "ac_flow_number": 1,
+        "values_pu": {
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm": 0.9961242876845122,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm": 0.9995953542043262,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm": 1.000860618120925,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm": 1.0183168288134876
+        }
+      },
+      "evaluated_actual_state": {
+        "state_role": "evaluated_actual_state",
+        "source": "raw_PF_result_snapshot",
+        "valid": true,
+        "record_label": "baseline_confirmation",
+        "ac_flow_number": 1,
+        "values_pu": {
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm": 0.9961242876845122,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm": 0.9995953542043262,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm": 1.000860618120925,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm": 1.0183168288134876
+        }
+      }
+    },
+    "R": 0.0,
+    "generated_spec_sha256": "6eb91c84916a3882711c7af0ce8b1f9ccb10868e0502701ba5b22c641adf81cc",
+    "source": "actual_PF",
+    "input_setpoints_only_not_system_balance": true
+  },
+  "generated_acceptance": {
+    "valid": true,
+    "phase": "final",
+    "phase_satisfied": true,
+    "baseline_conditions": true,
+    "process_conditions": true,
+    "all_requirements": true,
+    "checks": [
+      {
+        "constraint_id": "c1_line_loading__stage_final::0",
+        "type": "line_loading_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Yonga-Jinx.ElmLne"
+        ],
+        "clause": "C1",
+        "unit": "percent",
+        "tolerance": 0.0,
+        "timing": "final",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 12.842631118996916,
+          "upper": 12.906208500774126
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          12.842641000066735
+        ],
+        "error": [
+          -9.881069818362676e-06
+        ],
+        "margin": 9.881069818362676e-06,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "c1_line_loading__stage_final::0::0",
+            "type": "line_loading_bounds",
+            "clause": "C1",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Yonga-Jinx.ElmLne"
+            ],
+            "unit": "percent",
+            "timing": "final",
+            "target_or_range": {
+              "lower": 12.842631118996916,
+              "upper": 12.906208500774126
+            },
+            "tolerance": 0.0,
+            "source": "actual_PF",
+            "current_value": 12.842641000066735,
+            "error": -9.881069818362676e-06,
+            "margin": 9.881069818362676e-06,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "c3_total_active_input__stage_every_accepted_state::0",
+        "type": "active_power_sum",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+        ],
+        "clause": "C3",
+        "unit": "MW",
+        "tolerance": 2.388818359375e-05,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "value": 413.2999954223633
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          413.30000495910645
+        ],
+        "error": [
+          9.5367431640625e-06
+        ],
+        "margin": 1.43514404296875e-05,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "c3_total_active_input__stage_every_accepted_state::0::0",
+            "type": "active_power_sum",
+            "clause": "C3",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+            ],
+            "unit": "MW",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "value": 413.2999954223633
+            },
+            "tolerance": 2.388818359375e-05,
+            "source": "actual_PF",
+            "current_value": 413.30000495910645,
+            "error": 9.5367431640625e-06,
+            "margin": 1.43514404296875e-05,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "c4_each_baseline_qp__stage_every_accepted_state::0",
+        "type": "baseline_qp",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+        ],
+        "clause": "C4",
+        "unit": "Mvar",
+        "tolerance": 9.794873805516215e-06,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {},
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          {
+            "P_MW": 258.233154296875,
+            "Q_Mvar": 84.28235626220703,
+            "Q_over_P": 0.3263808494757134
+          },
+          {
+            "P_MW": 72.1030044555664,
+            "Q_Mvar": 49.28048324584961,
+            "Q_over_P": 0.6834733672744356
+          },
+          {
+            "P_MW": 50.97406005859375,
+            "Q_Mvar": 10.694557189941406,
+            "Q_over_P": 0.20980391159048756
+          },
+          {
+            "P_MW": 31.98978614807129,
+            "Q_Mvar": -3.598850727081299,
+            "Q_over_P": -0.1124999932923365
+          }
+        ],
+        "error": [
+          -6.26466487574362e-08,
+          2.314887623811046e-07,
+          -3.1798845157027245e-07,
+          1.192397292015812e-07
+        ],
+        "margin": 9.476885353945942e-06,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "c4_each_baseline_qp__stage_every_accepted_state::0::0",
+            "type": "qp_ratio",
+            "clause": "C4",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod"
+            ],
+            "unit": "Mvar",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "ratio": 0.3263808497183106
+            },
+            "tolerance": 9.794873805516215e-06,
+            "source": "actual_PF",
+            "current_value": {
+              "P_MW": 258.233154296875,
+              "Q_Mvar": 84.28235626220703,
+              "Q_over_P": 0.3263808494757134
+            },
+            "error": -6.26466487574362e-08,
+            "margin": 9.732227156758778e-06,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          },
+          {
+            "constraint_id": "c4_each_baseline_qp__stage_every_accepted_state::0::1",
+            "type": "qp_ratio",
+            "clause": "C4",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod"
+            ],
+            "unit": "Mvar",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "ratio": 0.683473364063907
+            },
+            "tolerance": 9.794873805516215e-06,
+            "source": "actual_PF",
+            "current_value": {
+              "P_MW": 72.1030044555664,
+              "Q_Mvar": 49.28048324584961,
+              "Q_over_P": 0.6834733672744356
+            },
+            "error": 2.314887623811046e-07,
+            "margin": 9.56338504313511e-06,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          },
+          {
+            "constraint_id": "c4_each_baseline_qp__stage_every_accepted_state::0::2",
+            "type": "qp_ratio",
+            "clause": "C4",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod"
+            ],
+            "unit": "Mvar",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "ratio": 0.20980391782872818
+            },
+            "tolerance": 9.794873805516215e-06,
+            "source": "actual_PF",
+            "current_value": {
+              "P_MW": 50.97406005859375,
+              "Q_Mvar": 10.694557189941406,
+              "Q_over_P": 0.20980391159048756
+            },
+            "error": -3.1798845157027245e-07,
+            "margin": 9.476885353945942e-06,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          },
+          {
+            "constraint_id": "c4_each_baseline_qp__stage_every_accepted_state::0::3",
+            "type": "qp_ratio",
+            "clause": "C4",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+            ],
+            "unit": "Mvar",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "ratio": -0.11249999701976776
+            },
+            "tolerance": 9.794873805516215e-06,
+            "source": "actual_PF",
+            "current_value": {
+              "P_MW": 31.98978614807129,
+              "Q_Mvar": -3.598850727081299,
+              "Q_over_P": -0.1124999932923365
+            },
+            "error": 1.192397292015812e-07,
+            "margin": 9.675634076314633e-06,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "c5_alpha_bounds__stage_every_accepted_state::0",
+        "type": "alpha_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+        ],
+        "clause": "C5",
+        "unit": "dimensionless",
+        "tolerance": 1e-07,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 0.99,
+          "upper": 1.02
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          {
+            "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod": 0.9974243352053689,
+            "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod": 1.009845979196971,
+            "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod": 0.9994913736979166,
+            "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod": 0.9996808171272278
+          }
+        ],
+        "error": [
+          -0.007424335205368893
+        ],
+        "margin": 0.007424435205368893,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "c5_alpha_bounds__stage_every_accepted_state::0::0",
+            "type": "alpha_bounds",
+            "clause": "C5",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+            ],
+            "unit": "dimensionless",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "lower": 0.99,
+              "upper": 1.02
+            },
+            "tolerance": 1e-07,
+            "source": "actual_PF",
+            "current_value": {
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod": 0.9974243352053689,
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod": 1.009845979196971,
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod": 0.9994913736979166,
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod": 0.9996808171272278
+            },
+            "error": -0.007424335205368893,
+            "margin": 0.007424435205368893,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "c6_v1_voltage__stage_every_accepted_state::0",
+        "type": "voltage_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm"
+        ],
+        "clause": "C6",
+        "unit": "pu",
+        "tolerance": 0.0,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 0.9911242876845122,
+          "upper": 1.0011242876845121
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          0.9961603110482798
+        ],
+        "error": [
+          -0.00496397663623227
+        ],
+        "margin": 0.00496397663623227,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "c6_v1_voltage__stage_every_accepted_state::0::0",
+            "type": "voltage_bounds",
+            "clause": "C6",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm"
+            ],
+            "unit": "pu",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "lower": 0.9911242876845122,
+              "upper": 1.0011242876845121
+            },
+            "tolerance": 0.0,
+            "source": "actual_PF",
+            "current_value": 0.9961603110482798,
+            "error": -0.00496397663623227,
+            "margin": 0.00496397663623227,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "c6_v2_voltage__stage_every_accepted_state::0",
+        "type": "voltage_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm"
+        ],
+        "clause": "C6",
+        "unit": "pu",
+        "tolerance": 0.0,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 0.9945953542043262,
+          "upper": 1.0045953542043262
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          0.9994421518834672
+        ],
+        "error": [
+          -0.0048467976791409795
+        ],
+        "margin": 0.0048467976791409795,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "c6_v2_voltage__stage_every_accepted_state::0::0",
+            "type": "voltage_bounds",
+            "clause": "C6",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm"
+            ],
+            "unit": "pu",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "lower": 0.9945953542043262,
+              "upper": 1.0045953542043262
+            },
+            "tolerance": 0.0,
+            "source": "actual_PF",
+            "current_value": 0.9994421518834672,
+            "error": -0.0048467976791409795,
+            "margin": 0.0048467976791409795,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "c6_v3_voltage__stage_every_accepted_state::0",
+        "type": "voltage_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm"
+        ],
+        "clause": "C6",
+        "unit": "pu",
+        "tolerance": 0.0,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 0.995860618120925,
+          "upper": 1.0058606181209249
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          1.000872101589899
+        ],
+        "error": [
+          -0.004988516531025944
+        ],
+        "margin": 0.004988516531025944,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "c6_v3_voltage__stage_every_accepted_state::0::0",
+            "type": "voltage_bounds",
+            "clause": "C6",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm"
+            ],
+            "unit": "pu",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "lower": 0.995860618120925,
+              "upper": 1.0058606181209249
+            },
+            "tolerance": 0.0,
+            "source": "actual_PF",
+            "current_value": 1.000872101589899,
+            "error": -0.004988516531025944,
+            "margin": 0.004988516531025944,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      },
+      {
+        "constraint_id": "c6_v4_voltage__stage_every_accepted_state::0",
+        "type": "voltage_bounds",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm"
+        ],
+        "clause": "C6",
+        "unit": "pu",
+        "tolerance": 0.0,
+        "timing": "every_accepted_state",
+        "applicable": true,
+        "target_or_range": {
+          "lower": 1.0133168288134877,
+          "upper": 1.0233168288134875
+        },
+        "source": "actual_PF",
+        "evaluated_on": "current_state",
+        "current_value": [
+          1.0182991118066334
+        ],
+        "error": [
+          -0.004982282993145626
+        ],
+        "margin": 0.004982282993145626,
+        "pass": true,
+        "status": "satisfied",
+        "details": [
+          {
+            "constraint_id": "c6_v4_voltage__stage_every_accepted_state::0::0",
+            "type": "voltage_bounds",
+            "clause": "C6",
+            "objects": [
+              "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm"
+            ],
+            "unit": "pu",
+            "timing": "every_accepted_state",
+            "target_or_range": {
+              "lower": 1.0133168288134877,
+              "upper": 1.0233168288134875
+            },
+            "tolerance": 0.0,
+            "source": "actual_PF",
+            "current_value": 1.0182991118066334,
+            "error": -0.004982282993145626,
+            "margin": 0.004982282993145626,
+            "status": "satisfied",
+            "pass": true,
+            "evaluated_on": "current_state",
+            "applicable": true
+          }
+        ]
+      }
+    ],
+    "context_guards": {
+      "valid_AC_identity_settings_controls": true,
+      "other_load_inputs_unchanged": true,
+      "requested_context_guards": true
+    },
+    "values_pu": {
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm": 0.9961603110482798,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm": 0.9994421518834672,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm": 1.000872101589899,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm": 1.0182991118066334
+    },
+    "target_residuals_pu": {},
+    "baseline_values_pu": {
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm": 0.9961242876845122,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm": 0.9995953542043262,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm": 1.000860618120925,
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm": 1.0183168288134876
+    },
+    "voltage_sources": {
+      "original_baseline": {
+        "state_role": "original_baseline",
+        "source": "raw_PF_result_snapshot",
+        "valid": true,
+        "record_label": "baseline_confirmation",
+        "ac_flow_number": 1,
+        "values_pu": {
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm": 0.9961242876845122,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm": 0.9995953542043262,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm": 1.000860618120925,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm": 1.0183168288134876
+        }
+      },
+      "evaluated_actual_state": {
+        "state_role": "evaluated_actual_state",
+        "source": "raw_PF_result_snapshot",
+        "valid": true,
+        "record_label": "scenario_candidate_0001",
+        "ac_flow_number": 2,
+        "values_pu": {
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm": 0.9961603110482798,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm": 0.9994421518834672,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm": 1.000872101589899,
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm": 1.0182991118066334
+        }
+      }
+    },
+    "R": 0.0,
+    "generated_spec_sha256": "65ca973b824a4f25ca4f58c94880b6c41a8e8e2a89b9a5c5c723449e4afa1bcc",
+    "source": "actual_PF",
+    "input_setpoints_only_not_system_balance": true
+  },
+  "incremental_AC": 0,
+  "restoration": "passed",
+  "source_unchanged": true
+}

@@ -1,0 +1,18 @@
+{
+  "version": "mixed-residual-margin-v1",
+  "registered_before_new_research_answers_and_candidates": true,
+  "source_component": "experiments/core_mechanism_closeout_v2.py:correction",
+  "task_scope": ["S-T"],
+  "maximum_corrections_per_task": 1,
+  "formula": "e = actual_at_own_first_candidate - original_linear_prediction_at_same_candidate; m = abs(e); internal raw prediction interval = [L + m - e, U - m - e]",
+  "margin_coefficient": 1.0,
+  "eligible_constraints": ["voltage_bounds", "voltage_target", "line_loading_bounds", "line_active_power_bounds", "generator_output_bounds"],
+  "phases": "final and every_accepted_state candidate restrictions only; baseline admission remains original",
+  "reference_rule": "Reuse old D point only for identical full physical candidate and input/control/reference/response/acceptance context; otherwise measure own first candidate. Rejected point is not an accepted reference state.",
+  "binding": "Frozen original task, response, baseline inputs and controls; witness original problem, first candidate, valid AC readback and restoration evidence",
+  "objective_and_response": "Unchanged slopes, normalization, permissions, original-baseline movement objective and centers-first active-face policy",
+  "acceptance": "Unchanged original specification and independent original requirements; never evaluate against corrected internal bounds",
+  "conflict_rule": "If any corrected interval is empty, stop with no candidate. No clipping, reduced margin, extra solve or relaxed acceptance.",
+  "scope_limit": "Single-point residual is not a global error bound; no new response sampling.",
+  "fallback": "If no certified model specification, one D-only correction may be executed and must not count as LLM success."
+}

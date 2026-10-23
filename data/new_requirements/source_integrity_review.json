@@ -1,0 +1,12 @@
+{
+  "method_verified": true,
+  "original_mismatches": [
+    {
+      "path": "trajectories\\N-T1_B\\input_integrity.json",
+      "expected": "fe760a55991a6d9c5b0d7217027e657f70fff91072dce3c4628cc4abf54a8d71",
+      "actual": "d022feefde2777a57e2a54d134c4ae53505ad86db9c60007b7740f0b3b497569",
+      "cause": "runtime audit trailing CRLF only"
+    }
+  ],
+  "original_records_modified": false
+}

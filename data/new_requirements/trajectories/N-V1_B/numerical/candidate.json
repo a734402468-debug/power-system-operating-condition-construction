@@ -1,0 +1,31 @@
+{
+  "status": "candidate",
+  "alphas": {
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_100_1.ElmLod": 1.0,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_102_1.ElmLod": 1.0,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_105_1.ElmLod": 1.0,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_101_1.ElmLod": 1.0445217467850227,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_103_1.ElmLod": 1.0002017608790104,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_104_1.ElmLod": 1.0445217467850227
+  },
+  "adjustable_alphas": {
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_101_1.ElmLod": 1.0445217467850227,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_103_1.ElmLod": 1.0002017608790104,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_104_1.ElmLod": 1.0445217467850227
+  },
+  "predicted_values_pu": {
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\101 Wythe.ElmTerm": 0.985585013072658,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\102 Smythe.ElmTerm": 0.9807469954810234
+  },
+  "equation_residuals": {
+    "group_command_proportional_A__stage_every_accepted_state::0_1": 0.0
+  },
+  "squared_multiplier_change": 0.003964412581031664,
+  "active_constraints": [
+    "voltage_V2_final__stage_final::0::0 upper"
+  ],
+  "phase": "exact_centers",
+  "faces_examined": 667,
+  "problem_sha256": "0ecd864fa21ba9ae27dacfbf218af8a808e6a113a9641c4b6b663472dbc9bb94",
+  "is_physical_feasibility_evidence": false
+}

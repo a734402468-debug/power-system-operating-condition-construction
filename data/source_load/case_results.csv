@@ -1,0 +1,4 @@
+task,first_contract,first_semantic,revision_count,final_semantic,numeric,physical,restoration,strict_complete,success_patch
+S-T,True,certified_existing_fixed_input_rule,0,certified_existing_fixed_input_rule,candidate,passed,passed,True,<PROJECT_ROOT>\artifacts\source_load_closeout_v1\20261020_close01\E_S-T\correction\physical\scene_patch.json
+S-V,True,confirmed_stage_strengthening,0,confirmed_stage_strengthening,not_executed,not_executed,,False,
+S-L,False,not_evaluated,1,certified_existing_fixed_input_rule,candidate,passed,historical_passed,True,<PROJECT_ROOT>\artifacts\source_load_closeout_v1\20261020_close01\E_S-L\physical\scene_patch.json

@@ -1,0 +1,384 @@
+{
+  "kind": "growth",
+  "catalog": {
+    "L1": {
+      "kind": "load",
+      "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+      "name": "Shuf_lod.ElmLod",
+      "base_inputs": {
+        "plini": 258.8999938964844,
+        "qlini": 84.5
+      },
+      "connected_bus_path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm"
+    },
+    "V1": {
+      "kind": "voltage",
+      "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm",
+      "name": "Shuf115",
+      "baseline_voltage_pu": 0.9961242876845122
+    },
+    "L2": {
+      "kind": "load",
+      "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+      "name": "Jinx_lod.ElmLod",
+      "base_inputs": {
+        "plini": 71.4000015258789,
+        "qlini": 48.79999923706055
+      },
+      "connected_bus_path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm"
+    },
+    "V2": {
+      "kind": "voltage",
+      "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm",
+      "name": "Jinx230",
+      "baseline_voltage_pu": 0.9995953542043262
+    },
+    "L3": {
+      "kind": "load",
+      "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+      "name": "Aoy_load.ElmLod",
+      "base_inputs": {
+        "plini": 51.0,
+        "qlini": 10.699999809265137
+      },
+      "connected_bus_path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm"
+    },
+    "V3": {
+      "kind": "voltage",
+      "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm",
+      "name": "Aoy115",
+      "baseline_voltage_pu": 1.000860618120925
+    },
+    "L4": {
+      "kind": "load",
+      "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod",
+      "name": "Seli_lod.ElmLod",
+      "base_inputs": {
+        "plini": 32.0,
+        "qlini": -3.5999999046325684
+      },
+      "connected_bus_path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm"
+    },
+    "V4": {
+      "kind": "voltage",
+      "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm",
+      "name": "Seli230",
+      "baseline_voltage_pu": 1.0183168288134876
+    }
+  },
+  "public": {
+    "id": "NJ_FOUR_LOAD_CATALOG_V1",
+    "devices": {
+      "L1": {
+        "kind": "load",
+        "name": "Shuf_lod.ElmLod",
+        "base_inputs": {
+          "plini": 258.8999938964844,
+          "qlini": 84.5
+        }
+      },
+      "V1": {
+        "kind": "voltage",
+        "name": "Shuf115",
+        "baseline_voltage_pu": 0.9961242876845122
+      },
+      "L2": {
+        "kind": "load",
+        "name": "Jinx_lod.ElmLod",
+        "base_inputs": {
+          "plini": 71.4000015258789,
+          "qlini": 48.79999923706055
+        }
+      },
+      "V2": {
+        "kind": "voltage",
+        "name": "Jinx230",
+        "baseline_voltage_pu": 0.9995953542043262
+      },
+      "L3": {
+        "kind": "load",
+        "name": "Aoy_load.ElmLod",
+        "base_inputs": {
+          "plini": 51.0,
+          "qlini": 10.699999809265137
+        }
+      },
+      "V3": {
+        "kind": "voltage",
+        "name": "Aoy115",
+        "baseline_voltage_pu": 1.000860618120925
+      },
+      "L4": {
+        "kind": "load",
+        "name": "Seli_lod.ElmLod",
+        "base_inputs": {
+          "plini": 32.0,
+          "qlini": -3.5999999046325684
+        }
+      },
+      "V4": {
+        "kind": "voltage",
+        "name": "Seli230",
+        "baseline_voltage_pu": 1.0183168288134876
+      }
+    },
+    "reference_snapshot": {
+      "id": "NJ_BASELINE_V1",
+      "load_inputs": {
+        "L1": {
+          "plini": 258.8999938964844,
+          "qlini": 84.5
+        },
+        "L2": {
+          "plini": 71.4000015258789,
+          "qlini": 48.79999923706055
+        },
+        "L3": {
+          "plini": 51.0,
+          "qlini": 10.699999809265137
+        },
+        "L4": {
+          "plini": 32.0,
+          "qlini": -3.5999999046325684
+        }
+      },
+      "voltage_pu": {
+        "V1": 0.9961242876845122,
+        "V2": 0.9995953542043262,
+        "V3": 1.000860618120925,
+        "V4": 1.0183168288134876
+      }
+    },
+    "reference_state_id": "NJ_BASELINE_V1",
+    "precision_policies": {
+      "version": "precision-policy-v1",
+      "policies": {
+        "P_SUM_V1": {
+          "unit": "MW",
+          "user_allowed_error": 2.388818359375e-05,
+          "effective_evaluation_tolerance": 2.388818359375e-05,
+          "storage_policy": "NJ archived float32 budget, unchanged; no extra allowance",
+          "extra_storage_error_added": 0.0,
+          "solver_policy": "retained-active-face-v1.1",
+          "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+        },
+        "QP_RESIDUAL_V1": {
+          "unit": "Mvar",
+          "user_allowed_error": 9.794873805516215e-06,
+          "effective_evaluation_tolerance": 9.794873805516215e-06,
+          "storage_policy": "NJ archived float32 budget, unchanged; no extra allowance",
+          "extra_storage_error_added": 0.0,
+          "solver_policy": "retained-active-face-v1.1",
+          "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+        },
+        "ALPHA_READ_V1": {
+          "unit": "dimensionless",
+          "user_allowed_error": 1e-07,
+          "effective_evaluation_tolerance": 1e-07,
+          "storage_policy": "existing readback/exact-bound policy",
+          "extra_storage_error_added": 0.0,
+          "solver_policy": "retained-active-face-v1.1",
+          "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+        },
+        "FIXED_EXACT_V1": {
+          "unit": "per_field",
+          "user_allowed_error": 0.0,
+          "effective_evaluation_tolerance": 0.0,
+          "storage_policy": "existing readback/exact-bound policy",
+          "extra_storage_error_added": 0.0,
+          "solver_policy": "retained-active-face-v1.1",
+          "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+        },
+        "VOLTAGE_EDGE_ZERO_V1": {
+          "unit": "pu",
+          "user_allowed_error": 0.0,
+          "effective_evaluation_tolerance": 0.0,
+          "storage_policy": "existing readback/exact-bound policy",
+          "extra_storage_error_added": 0.0,
+          "solver_policy": "retained-active-face-v1.1",
+          "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+        },
+        "PROP_ALPHA_V1": {
+          "unit": "dimensionless",
+          "user_allowed_error": 2e-07,
+          "effective_evaluation_tolerance": 2e-07,
+          "storage_policy": "existing readback/exact-bound policy",
+          "extra_storage_error_added": 0.0,
+          "solver_policy": "retained-active-face-v1.1",
+          "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+        }
+      },
+      "rule": "User allowed deviation, storage uncertainty and numerical residual checks are distinct. Existing user budget already includes its preregistered storage allowance; never add it twice."
+    },
+    "authorized_load_ids": [
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ],
+    "policy_id": "PQ_ALPHA_TECHNICAL_V1",
+    "growth_permission": {
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod": {
+        "lower": 1.0,
+        "upper": 1.02
+      },
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod": {
+        "lower": 1.0,
+        "upper": 1.02
+      },
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod": {
+        "lower": 1.0,
+        "upper": 1.02
+      },
+      "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod": {
+        "lower": 1.0,
+        "upper": 1.02
+      }
+    },
+    "private_catalog": {
+      "L1": {
+        "kind": "load",
+        "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod",
+        "name": "Shuf_lod.ElmLod",
+        "base_inputs": {
+          "plini": 258.8999938964844,
+          "qlini": 84.5
+        },
+        "connected_bus_path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm"
+      },
+      "V1": {
+        "kind": "voltage",
+        "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm",
+        "name": "Shuf115",
+        "baseline_voltage_pu": 0.9961242876845122
+      },
+      "L2": {
+        "kind": "load",
+        "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+        "name": "Jinx_lod.ElmLod",
+        "base_inputs": {
+          "plini": 71.4000015258789,
+          "qlini": 48.79999923706055
+        },
+        "connected_bus_path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm"
+      },
+      "V2": {
+        "kind": "voltage",
+        "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm",
+        "name": "Jinx230",
+        "baseline_voltage_pu": 0.9995953542043262
+      },
+      "L3": {
+        "kind": "load",
+        "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+        "name": "Aoy_load.ElmLod",
+        "base_inputs": {
+          "plini": 51.0,
+          "qlini": 10.699999809265137
+        },
+        "connected_bus_path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm"
+      },
+      "V3": {
+        "kind": "voltage",
+        "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm",
+        "name": "Aoy115",
+        "baseline_voltage_pu": 1.000860618120925
+      },
+      "L4": {
+        "kind": "load",
+        "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod",
+        "name": "Seli_lod.ElmLod",
+        "base_inputs": {
+          "plini": 32.0,
+          "qlini": -3.5999999046325684
+        },
+        "connected_bus_path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm"
+      },
+      "V4": {
+        "kind": "voltage",
+        "path": "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm",
+        "name": "Seli230",
+        "baseline_voltage_pu": 1.0183168288134876
+      }
+    },
+    "load_sets": {
+      "A": [
+        "L1",
+        "L2"
+      ],
+      "B": [
+        "L3",
+        "L4"
+      ]
+    },
+    "balance_policy": {
+      "id": "NJ_EXISTING_SIMULATION_CONFIGURATION_V1",
+      "rule": "Keep archived reference/balancing and voltage control settings. No generator/SVC/transformer actuation. Engineering P capability and automatic reference selection unknown; ±9999 Mvar is not an engineering limit. No hidden global health condition."
+    },
+    "scenario_criteria": {
+      "id": "paper-formal-cases-v1",
+      "source": "Pre-specified controlled engineering research requirement, not certified operating limit",
+      "rule": "No stale targets, no automatic global health requirement"
+    }
+  },
+  "snapshot": {
+    "state_id": "NJ_BASELINE_V1",
+    "quantities": {
+      "L1": {
+        "plini": 258.8999938964844,
+        "qlini": 84.5
+      },
+      "V1": {
+        "voltage_pu": 0.9961242876845122
+      },
+      "L2": {
+        "plini": 71.4000015258789,
+        "qlini": 48.79999923706055
+      },
+      "V2": {
+        "voltage_pu": 0.9995953542043262
+      },
+      "L3": {
+        "plini": 51.0,
+        "qlini": 10.699999809265137
+      },
+      "V3": {
+        "voltage_pu": 1.000860618120925
+      },
+      "L4": {
+        "plini": 32.0,
+        "qlini": -3.5999999046325684
+      },
+      "V4": {
+        "voltage_pu": 1.0183168288134876
+      }
+    },
+    "snapshot_sha256": "4ed8cad94e7e299ceb61f47d811824e68b04a5ab18343b6fedf44579b75e3830",
+    "source": "same published baseline catalog; representation adapter only"
+  },
+  "allowed": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+  ],
+  "original": "V3：形成Shuf115小幅降压试验状态，并限制Jinx230变化，用于跨电网电压目标及保留组合测试。\n这是固定模型中的受控研究任务，集合为登记设备清单，不称实际地理区域。参考状态为NJ_BASELINE_V1。\nC1：增长组A={L1,L2}，B={L3,L4}，组间增长幅度独立。\nC2：仅final，每个非空增长组内采用相同绝对倍率alpha，即相对各自基准有功按原比例增长；保持各自Q/P。连续幅度由共同数值工具求解，不要求组间倍率相同。\nC3：本题为负荷增长，不要求负荷有功输入总和守恒，禁止继承旧转移条款。\nC4：所列全部负荷各自保持同一参考状态下的Q/P，使用P=P0×alpha、Q=Q0×alpha，从基准计算，禁止累乘；适用于baseline及every_accepted_state（含final）。Seli的负Q保持原有符号和映射，不转换输入模式。\nC5：只允许调整L1（Shuf_lod.ElmLod）、L2（Jinx_lod.ElmLod）、L3（Aoy_load.ElmLod）、L4（Seli_lod.ElmLod），其alpha∈[1.0,1.02]；固定输入为无，固定对象P/Q与基准完全相同。边界及固定条件适用于baseline及every_accepted_state（含final）。其他负荷输入不变。\nC6：各电压区间按本母线分别验收：\nV1（Shuf115）∈[0.9959742876845122,0.9960242876845122] pu；仅final。\nV2（Jinx230）∈[0.9993953542043262,0.9997953542043262] pu；baseline及every_accepted_state（含final）。\nV3（Aoy115）∈[0.995860618120925,1.0058606181209249] pu；baseline及every_accepted_state（含final）。\nV4（Seli230）∈[1.0133168288134877,1.0233168288134875] pu；baseline及every_accepted_state（含final）。\n所有绝对端点为主验收表示；相对变化由同一端点减同一基准推导，不另行舍入。最终目标不要求baseline已满足。\nC7：其他输入、拓扑、共享类型、控制设置及潮流配置不变。保留原平衡及调压机制；配置不变不要求机组连续P/Q不变。不修复已有越限，不宣称全网健康。试算不自动成为接受状态，不解释成动态轨迹。\n精度政策：P_SUM_V1=2.388818359375e-05 MW（两侧和总量分别验收）；QP_RESIDUAL_V1=9.794873805516215e-06 Mvar；ALPHA_READ_V1=1e-7；PROP_ALPHA_V1=2e-7；FIXED_EXACT_V1=0；VOLTAGE_EDGE_ZERO_V1=0 pu。不重复叠加存储预算；求解残差检查不放宽物理端点。\n",
+  "actuator_bounds": {
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod": {
+      "lower": 1.0,
+      "upper": 1.02
+    },
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod": {
+      "lower": 1.0,
+      "upper": 1.02
+    },
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod": {
+      "lower": 1.0,
+      "upper": 1.02
+    },
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod": {
+      "lower": 1.0,
+      "upper": 1.02
+    }
+  }
+}

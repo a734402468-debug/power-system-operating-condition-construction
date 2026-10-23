@@ -1,0 +1,31 @@
+{
+  "status": "candidate",
+  "alphas": {
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_102_1.ElmLod": 1.0,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_103_1.ElmLod": 1.0,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_104_1.ElmLod": 1.0,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_100_1.ElmLod": 1.0018794095799237,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_101_1.ElmLod": 1.055655191428117,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_105_1.ElmLod": 1.055655191428117
+  },
+  "adjustable_alphas": {
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_100_1.ElmLod": 1.0018794095799237,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_101_1.ElmLod": 1.055655191428117,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_105_1.ElmLod": 1.055655191428117
+  },
+  "predicted_values_pu": {
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\101 Wythe.ElmTerm": 0.985385013072658,
+    "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\102 Smythe.ElmTerm": 0.9806241643752442
+  },
+  "equation_residuals": {
+    "group_command_proportional_A__stage_every_accepted_state::0_1": 0.0
+  },
+  "squared_multiplier_change": 0.006198532846169788,
+  "active_constraints": [
+    "voltage_target_V2__stage_final::0::0 upper"
+  ],
+  "phase": "exact_centers",
+  "faces_examined": 667,
+  "problem_sha256": "9b322f3698c9cbd03e698efbdf48509dd393162d7c711affa93d419fe6656ecc",
+  "is_physical_feasibility_evidence": false
+}

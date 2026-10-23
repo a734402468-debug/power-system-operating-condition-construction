@@ -1,0 +1,32 @@
+{
+  "status": "candidate",
+  "alphas": {
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod": 1.0,
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod": 0.9901111473436701,
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod": 1.0098443504013832,
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod": 0.9937951516185244
+  },
+  "adjustable_alphas": {
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod": 0.9901111473436701,
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod": 1.0098443504013832,
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod": 0.9937951516185244
+  },
+  "predicted_values_pu": {
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm": 1.0008812584393547,
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm": 0.9994405848455323,
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm": 1.0183049764320053,
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm": 0.9961260485975256
+  },
+  "equation_residuals": {},
+  "squared_multiplier_change": 0.00023320078512091682,
+  "active_constraints": [
+    "C1_E1__stage_final::0::0 lower"
+  ],
+  "phase": "exact_centers",
+  "faces_examined": 667,
+  "problem_sha256": "4ccd83bc36e15a5bbf2a3e85635184ce3c4e7b64f07ba07b5634e4175bd041e5",
+  "is_physical_feasibility_evidence": false,
+  "predicted_line_loading_percent": {
+    "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Yonga-Jinx.ElmLne": 12.842631118996907
+  }
+}

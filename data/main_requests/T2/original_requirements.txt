@@ -1,0 +1,17 @@
+T2：保留大负荷L1输入，检查其余负荷是否能完成指定转移；固定成员仍计入A统计。
+这是固定模型中的受控研究任务，集合为登记设备清单，不称实际地理区域。参考状态为CG_BASELINE_V1。
+C1：统计集合A={L1,L2,L3}，B={L4,L5,L6}；仅final，A有功输入和相对基准减少0.2 MW，B增加同量。固定成员仍参与原集合的基准及最终总量统计。
+C2：组内自由协调，不要求比例分配或等量调整。
+C3：所列全部负荷{L1,L2,L3,L4,L5,L6}的有功输入总和相对同一基准保持，适用于baseline及every_accepted_state（含final）；总和容差独立于转移两侧容差。
+C4：全部六负荷各自保持基准Q/P，P=P0×alpha、Q=Q0×alpha，从基准计算不累乘；适用于baseline及every_accepted_state（含final）。
+C5：只允许调整L2（lod_101_1）、L3（lod_102_1）、L4（lod_103_1）、L5（lod_104_1）、L6（lod_105_1），其alpha∈[0.99,1.02]；固定输入为L1（lod_100_1），固定对象P/Q与基准完全相同。边界及固定条件适用于baseline及every_accepted_state（含final）。其他负荷输入不变。
+C6：各电压区间按本母线分别验收：
+V1（100 Glen Lyn）∈[1.0119999877014882,1.021999987701488] pu；baseline及every_accepted_state（含final）。
+V2（101 Wythe）∈[0.981385013072658,0.991385013072658] pu；baseline及every_accepted_state（含final）。
+V3（102 Smythe）∈[0.9762397545453265,0.9862397545453265] pu；baseline及every_accepted_state（含final）。
+V4（103 Claytor）∈[1.0050000181018235,1.0150000181018233] pu；baseline及every_accepted_state（含final）。
+V5（104 Hancock）∈[0.9660000425318596,0.9760000425318596] pu；baseline及every_accepted_state（含final）。
+V6（105 Roanoke）∈[0.9600000003123973,0.9700000003123973] pu；baseline及every_accepted_state（含final）。
+所有绝对端点为主验收表示；相对变化由同一端点减同一基准推导，不另行舍入。最终目标不要求baseline已满足。
+C7：其他输入、拓扑、共享类型、控制设置及潮流配置不变。保留原平衡及调压机制；配置不变不要求机组连续P/Q不变。不修复已有越限，不宣称全网健康。试算不自动成为接受状态，不解释成动态轨迹。
+精度政策：P_SUM_V1=1.3636184692382813e-05 MW（两侧和总量分别验收）；QP_RESIDUAL_V1=3.3364502601314728e-06 Mvar；ALPHA_READ_V1=1e-7；PROP_ALPHA_V1=2e-7；FIXED_EXACT_V1=0；VOLTAGE_EDGE_ZERO_V1=0 pu。不重复叠加存储预算；求解残差检查不放宽物理端点。

@@ -1,0 +1,68 @@
+{
+  "id": "T4",
+  "grid": "NJ",
+  "family": "transfer",
+  "A": [
+    "L1",
+    "L3"
+  ],
+  "B": [
+    "L2",
+    "L4"
+  ],
+  "fixed": [],
+  "adjustable": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+  ],
+  "bounds": [
+    0.99,
+    1.02
+  ],
+  "purpose": "改变统计集合，在0.50 MW转移时限制Shuf115电压扰动，供受控分布变化测试。",
+  "history": "相对NJ开发题改变集合配对，并采用既有已测20微pu保持判据；不是地理供电区域。",
+  "voltage_bands": {
+    "V1": {
+      "lower": 0.9961042876845122,
+      "upper": 0.9961442876845122,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "控制Shuf115对负荷转移的响应；预期改变自由分配选择",
+      "delta_design": [
+        -2e-05,
+        2e-05
+      ],
+      "primary_acceptance": "absolute_endpoints"
+    },
+    "V2": {
+      "lower": 0.9945953542043262,
+      "upper": 1.0045953542043262,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "保持原观察电压，不修复已有越限"
+    },
+    "V3": {
+      "lower": 0.995860618120925,
+      "upper": 1.0058606181209249,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "保持原观察电压，不修复已有越限"
+    },
+    "V4": {
+      "lower": 1.0133168288134877,
+      "upper": 1.0233168288134875,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "保持原观察电压，不修复已有越限"
+    }
+  },
+  "status": "controlled_engineering_research_requirement",
+  "transfer_MW": 0.5,
+  "distribution": "free"
+}

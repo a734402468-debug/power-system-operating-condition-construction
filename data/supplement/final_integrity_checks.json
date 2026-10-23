@@ -1,0 +1,213 @@
+{
+  "frozen_file_count": 191,
+  "frozen_hash_mismatches": [],
+  "checks": [
+    {
+      "trajectory": "GPT_T1_r1",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c74-e49f-7b00-9b95-3f99783786c1"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_T2_r1",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c75-f8c1-73a2-8180-239563a3156d"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_T3_r1",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c78-2e7d-7233-85ec-ec21bd1da711"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_T4_r1",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c7a-4369-7572-b5b0-bcc80daf8575"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_V1_r1",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c7b-ff03-7e11-8dab-21ed54f33c77"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_V2_r1",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c83-8f4c-7132-a705-c41f6667d7e8"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_V3_r1",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c8a-7b38-74e1-a1f9-2fe6b55fb8c5"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_V4_r1",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c8c-7821-77b1-9745-3a6dd6bdd9f4"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_L1_r1",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c8e-766b-71f0-aa0b-644eec404f7e"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_L2_r1",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c90-9d9e-73f3-9269-7a43a41b7e7b"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_L3_r1",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c92-d77b-75e0-8d63-714530449a99"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_L4_r1",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c93-9fb4-7dc2-8987-5fac77d937d2"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_T2_r2",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c94-a6cc-7001-95b2-adae2bc1f63b"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_T2_r3",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c95-dd1e-76e1-b38b-ba4fabae5be0"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_V3_r2",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c98-14d8-7c10-8e4c-6a1ca64d89f4"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_V3_r3",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c9a-1038-7ec0-89d3-588d48cf3b61"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_L3_r2",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c9c-05dc-7371-8783-ba96d072005a"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    },
+    {
+      "trajectory": "GPT_L3_r3",
+      "messages_equal_original": true,
+      "stdin_equal_exact_role_mapping": true,
+      "thread_ids": [
+        "01a15c9e-2628-75d0-a7fa-5568eacbffa2"
+      ],
+      "workdir_empty_at_return": true,
+      "tool_events": 0,
+      "result": "complete"
+    }
+  ],
+  "unique_thread_ids": 18,
+  "thread_count": 18,
+  "unique_workdirs": 18,
+  "visible_sessions": 18,
+  "visible_turn_starts": 18,
+  "visible_turn_completions": 18,
+  "bottom_level_requests": "unknown",
+  "server_model_snapshot": "unknown",
+  "full_server_tool_schema": "not_observable"
+}

@@ -1,0 +1,488 @@
+{
+  "version": "finite-semantics-v0.2",
+  "expression_correct": true,
+  "requirements_covered": true,
+  "equivalence_status": "finite_rules_equivalent",
+  "root_checks": {
+    "schema": true,
+    "variables": true,
+    "mapping": true,
+    "preserve": true
+  },
+  "original_requirements": [
+    {
+      "constraint_id": "r1__stage_final::0::0",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Yonga-Jinx.ElmLne"
+      ],
+      "type": "line_loading_bounds",
+      "status": "explicit_coverage",
+      "covered": true,
+      "basis": [
+        {
+          "constraint_id": "c1_line_loading__stage_final::0::0",
+          "clause": "C1"
+        }
+      ],
+      "required_clause": "C1"
+    },
+    {
+      "constraint_id": "r3__stage_every_accepted_state::0::0",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod",
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod"
+      ],
+      "type": "active_power_sum",
+      "status": "explicit_coverage",
+      "covered": true,
+      "basis": [
+        {
+          "constraint_id": "c3_total_active_input__stage_every_accepted_state::0::0",
+          "clause": "C3"
+        }
+      ],
+      "required_clause": "C3"
+    },
+    {
+      "constraint_id": "r4__stage_every_accepted_state::0::0",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod"
+      ],
+      "type": "qp_ratio",
+      "status": "explicit_coverage",
+      "covered": true,
+      "basis": [
+        {
+          "constraint_id": "c4_each_baseline_qp__stage_every_accepted_state::0::0",
+          "clause": "C4"
+        }
+      ],
+      "required_clause": "C4"
+    },
+    {
+      "constraint_id": "r4__stage_every_accepted_state::0::1",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod"
+      ],
+      "type": "qp_ratio",
+      "status": "explicit_coverage",
+      "covered": true,
+      "basis": [
+        {
+          "constraint_id": "c4_each_baseline_qp__stage_every_accepted_state::0::1",
+          "clause": "C4"
+        }
+      ],
+      "required_clause": "C4"
+    },
+    {
+      "constraint_id": "r4__stage_every_accepted_state::0::2",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod"
+      ],
+      "type": "qp_ratio",
+      "status": "explicit_coverage",
+      "covered": true,
+      "basis": [
+        {
+          "constraint_id": "c4_each_baseline_qp__stage_every_accepted_state::0::2",
+          "clause": "C4"
+        }
+      ],
+      "required_clause": "C4"
+    },
+    {
+      "constraint_id": "r4__stage_every_accepted_state::0::3",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+      ],
+      "type": "qp_ratio",
+      "status": "explicit_coverage",
+      "covered": true,
+      "basis": [
+        {
+          "constraint_id": "c4_each_baseline_qp__stage_every_accepted_state::0::3",
+          "clause": "C4"
+        }
+      ],
+      "required_clause": "C4"
+    },
+    {
+      "constraint_id": "r5__stage_every_accepted_state::0::0",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod"
+      ],
+      "type": "alpha_bounds",
+      "status": "explicit_coverage",
+      "covered": true,
+      "basis": [
+        {
+          "constraint_id": "c5_alpha_bounds__stage_every_accepted_state::0::0",
+          "clause": "C5"
+        }
+      ],
+      "required_clause": "C5"
+    },
+    {
+      "constraint_id": "r5__stage_every_accepted_state::0::0",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod"
+      ],
+      "type": "alpha_bounds",
+      "status": "explicit_coverage",
+      "covered": true,
+      "basis": [
+        {
+          "constraint_id": "c5_alpha_bounds__stage_every_accepted_state::0::0",
+          "clause": "C5"
+        }
+      ],
+      "required_clause": "C5"
+    },
+    {
+      "constraint_id": "r5__stage_every_accepted_state::0::0",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+      ],
+      "type": "alpha_bounds",
+      "status": "explicit_coverage",
+      "covered": true,
+      "basis": [
+        {
+          "constraint_id": "c5_alpha_bounds__stage_every_accepted_state::0::0",
+          "clause": "C5"
+        }
+      ],
+      "required_clause": "C5"
+    },
+    {
+      "constraint_id": "r5__stage_every_accepted_state::0::0",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod"
+      ],
+      "type": "alpha_bounds",
+      "status": "explicit_coverage",
+      "covered": true,
+      "basis": [
+        {
+          "constraint_id": "c5_alpha_bounds__stage_every_accepted_state::0::0",
+          "clause": "C5"
+        }
+      ],
+      "required_clause": "C5"
+    },
+    {
+      "constraint_id": "r6__stage_every_accepted_state::0::0",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm"
+      ],
+      "type": "voltage_bounds",
+      "status": "explicit_coverage",
+      "covered": true,
+      "basis": [
+        {
+          "constraint_id": "c6_v1_voltage__stage_every_accepted_state::0::0",
+          "clause": "C6"
+        }
+      ],
+      "required_clause": "C6"
+    },
+    {
+      "constraint_id": "r7__stage_every_accepted_state::0::0",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm"
+      ],
+      "type": "voltage_bounds",
+      "status": "explicit_coverage",
+      "covered": true,
+      "basis": [
+        {
+          "constraint_id": "c6_v2_voltage__stage_every_accepted_state::0::0",
+          "clause": "C6"
+        }
+      ],
+      "required_clause": "C6"
+    },
+    {
+      "constraint_id": "r8__stage_every_accepted_state::0::0",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm"
+      ],
+      "type": "voltage_bounds",
+      "status": "explicit_coverage",
+      "covered": true,
+      "basis": [
+        {
+          "constraint_id": "c6_v3_voltage__stage_every_accepted_state::0::0",
+          "clause": "C6"
+        }
+      ],
+      "required_clause": "C6"
+    },
+    {
+      "constraint_id": "r9__stage_every_accepted_state::0::0",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm"
+      ],
+      "type": "voltage_bounds",
+      "status": "explicit_coverage",
+      "covered": true,
+      "basis": [
+        {
+          "constraint_id": "c6_v4_voltage__stage_every_accepted_state::0::0",
+          "clause": "C6"
+        }
+      ],
+      "required_clause": "C6"
+    }
+  ],
+  "reverse_coverage": {
+    "requirements_covered": true,
+    "constraints": [
+      {
+        "constraint_id": "c1_line_loading__stage_final::0::0",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Yonga-Jinx.ElmLne"
+        ],
+        "type": "line_loading_bounds",
+        "status": "explicit_coverage",
+        "covered": true,
+        "basis": [
+          {
+            "constraint_id": "r1__stage_final::0::0",
+            "clause": "C1"
+          }
+        ],
+        "required_clause": "C1"
+      },
+      {
+        "constraint_id": "c3_total_active_input__stage_every_accepted_state::0::0",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod",
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod"
+        ],
+        "type": "active_power_sum",
+        "status": "explicit_coverage",
+        "covered": true,
+        "basis": [
+          {
+            "constraint_id": "r3__stage_every_accepted_state::0::0",
+            "clause": "C3"
+          }
+        ],
+        "required_clause": "C3"
+      },
+      {
+        "constraint_id": "c4_each_baseline_qp__stage_every_accepted_state::0::0",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod"
+        ],
+        "type": "qp_ratio",
+        "status": "explicit_coverage",
+        "covered": true,
+        "basis": [
+          {
+            "constraint_id": "r4__stage_every_accepted_state::0::0",
+            "clause": "C4"
+          }
+        ],
+        "required_clause": "C4"
+      },
+      {
+        "constraint_id": "c4_each_baseline_qp__stage_every_accepted_state::0::1",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod"
+        ],
+        "type": "qp_ratio",
+        "status": "explicit_coverage",
+        "covered": true,
+        "basis": [
+          {
+            "constraint_id": "r4__stage_every_accepted_state::0::1",
+            "clause": "C4"
+          }
+        ],
+        "required_clause": "C4"
+      },
+      {
+        "constraint_id": "c4_each_baseline_qp__stage_every_accepted_state::0::2",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod"
+        ],
+        "type": "qp_ratio",
+        "status": "explicit_coverage",
+        "covered": true,
+        "basis": [
+          {
+            "constraint_id": "r4__stage_every_accepted_state::0::2",
+            "clause": "C4"
+          }
+        ],
+        "required_clause": "C4"
+      },
+      {
+        "constraint_id": "c4_each_baseline_qp__stage_every_accepted_state::0::3",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+        ],
+        "type": "qp_ratio",
+        "status": "explicit_coverage",
+        "covered": true,
+        "basis": [
+          {
+            "constraint_id": "r4__stage_every_accepted_state::0::3",
+            "clause": "C4"
+          }
+        ],
+        "required_clause": "C4"
+      },
+      {
+        "constraint_id": "c5_alpha_bounds__stage_every_accepted_state::0::0",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy_load.ElmLod"
+        ],
+        "type": "alpha_bounds",
+        "status": "explicit_coverage",
+        "covered": true,
+        "basis": [
+          {
+            "constraint_id": "r5__stage_every_accepted_state::0::0",
+            "clause": "C5"
+          }
+        ],
+        "required_clause": "C5"
+      },
+      {
+        "constraint_id": "c5_alpha_bounds__stage_every_accepted_state::0::0",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx_lod.ElmLod"
+        ],
+        "type": "alpha_bounds",
+        "status": "explicit_coverage",
+        "covered": true,
+        "basis": [
+          {
+            "constraint_id": "r5__stage_every_accepted_state::0::0",
+            "clause": "C5"
+          }
+        ],
+        "required_clause": "C5"
+      },
+      {
+        "constraint_id": "c5_alpha_bounds__stage_every_accepted_state::0::0",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli_lod.ElmLod"
+        ],
+        "type": "alpha_bounds",
+        "status": "explicit_coverage",
+        "covered": true,
+        "basis": [
+          {
+            "constraint_id": "r5__stage_every_accepted_state::0::0",
+            "clause": "C5"
+          }
+        ],
+        "required_clause": "C5"
+      },
+      {
+        "constraint_id": "c5_alpha_bounds__stage_every_accepted_state::0::0",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf_lod.ElmLod"
+        ],
+        "type": "alpha_bounds",
+        "status": "explicit_coverage",
+        "covered": true,
+        "basis": [
+          {
+            "constraint_id": "r5__stage_every_accepted_state::0::0",
+            "clause": "C5"
+          }
+        ],
+        "required_clause": "C5"
+      },
+      {
+        "constraint_id": "c6_v1_voltage__stage_every_accepted_state::0::0",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Shufnet.ElmNet\\Shuf115.ElmTerm"
+        ],
+        "type": "voltage_bounds",
+        "status": "explicit_coverage",
+        "covered": true,
+        "basis": [
+          {
+            "constraint_id": "r6__stage_every_accepted_state::0::0",
+            "clause": "C6"
+          }
+        ],
+        "required_clause": "C6"
+      },
+      {
+        "constraint_id": "c6_v2_voltage__stage_every_accepted_state::0::0",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#4net.ElmNet\\Jinx230.ElmTerm"
+        ],
+        "type": "voltage_bounds",
+        "status": "explicit_coverage",
+        "covered": true,
+        "basis": [
+          {
+            "constraint_id": "r7__stage_every_accepted_state::0::0",
+            "clause": "C6"
+          }
+        ],
+        "required_clause": "C6"
+      },
+      {
+        "constraint_id": "c6_v3_voltage__stage_every_accepted_state::0::0",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Aoynet.ElmNet\\Aoy115.ElmTerm"
+        ],
+        "type": "voltage_bounds",
+        "status": "explicit_coverage",
+        "covered": true,
+        "basis": [
+          {
+            "constraint_id": "r8__stage_every_accepted_state::0::0",
+            "clause": "C6"
+          }
+        ],
+        "required_clause": "C6"
+      },
+      {
+        "constraint_id": "c6_v4_voltage__stage_every_accepted_state::0::0",
+        "objects": [
+          "\\MSI.IntUser\\PCL_Redistrib_NJ_261016_123407.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\Main#5net.ElmNet\\Seli230.ElmTerm"
+        ],
+        "type": "voltage_bounds",
+        "status": "explicit_coverage",
+        "covered": true,
+        "basis": [
+          {
+            "constraint_id": "r9__stage_every_accepted_state::0::0",
+            "clause": "C6"
+          }
+        ],
+        "required_clause": "C6"
+      }
+    ]
+  },
+  "generated_specification_unchanged": true,
+  "candidate_coincidence_not_used": true,
+  "proportional_requirements": {
+    "correct": true,
+    "checks": [
+      {
+        "requirement": "constraints",
+        "pass": true,
+        "actual": [],
+        "expected": []
+      }
+    ],
+    "generated_output_not_overwritten": true
+  },
+  "correct_specification_not_used_to_replace_output": true
+}

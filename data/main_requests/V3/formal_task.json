@@ -1,0 +1,71 @@
+{
+  "id": "V3",
+  "grid": "NJ",
+  "family": "voltage",
+  "A": [
+    "L1",
+    "L2"
+  ],
+  "B": [
+    "L3",
+    "L4"
+  ],
+  "fixed": [],
+  "adjustable": [
+    "L1",
+    "L2",
+    "L3",
+    "L4"
+  ],
+  "bounds": [
+    1.0,
+    1.02
+  ],
+  "purpose": "形成Shuf115小幅降压试验状态，并限制Jinx230变化，用于跨电网电压目标及保留组合测试。",
+  "history": "组结构沿用NJ-G1，采用事先按历史0.005探针响应量级登记的0.00010至0.00015 pu降压带；增加明确Jinx保持带。",
+  "voltage_bands": {
+    "V1": {
+      "lower": 0.9959742876845122,
+      "upper": 0.9960242876845122,
+      "stages": [
+        "final"
+      ],
+      "purpose": "约1%负荷增长对应0.000147 pu局部响应量级；受控小扰动，不称电压稳定裕度",
+      "delta_design": [
+        -0.00015,
+        -0.0001
+      ],
+      "primary_acceptance": "absolute_endpoints"
+    },
+    "V2": {
+      "lower": 0.9993953542043262,
+      "upper": 0.9997953542043262,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "限制另一观察母线变化，不要求其进入目标带",
+      "delta_design": [
+        -0.0002,
+        0.0002
+      ],
+      "primary_acceptance": "absolute_endpoints"
+    },
+    "V3": {
+      "lower": 0.995860618120925,
+      "upper": 1.0058606181209249,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "保持原观察电压，不修复已有越限"
+    },
+    "V4": {
+      "lower": 1.0133168288134877,
+      "upper": 1.0233168288134875,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "保持原观察电压，不修复已有越限"
+    }
+  },
+  "status": "controlled_engineering_research_requirement"
+}

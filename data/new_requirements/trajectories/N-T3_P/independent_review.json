@@ -1,0 +1,9 @@
+{
+  "status": "certified",
+  "basis": "Original finite evaluation",
+  "source_answer_sha256": "6295f152f58a1aa45b361bbf9e755e3edd4d76a46949e8f6de1eb02ada755bc4",
+  "rules": "old_definition/evaluation_rules.json",
+  "new_rules": false,
+  "output_modified": false,
+  "reference_never_sent": true
+}

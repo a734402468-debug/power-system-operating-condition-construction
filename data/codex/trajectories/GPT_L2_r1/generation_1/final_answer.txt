@@ -1,0 +1,149 @@
+{
+  "specification": {
+    "baseline_state": "NJ_LINE_BASELINE_V1",
+    "variables": {
+      "objects": ["L2", "L3", "L4"],
+      "mapping": "baseline_PQ_times_absolute_alpha"
+    },
+    "constraints": [
+      {
+        "id": "C1_E1",
+        "type": "line_loading_bounds",
+        "unit": "percent",
+        "clause": "C1",
+        "stages": ["final"],
+        "objects": ["E1"],
+        "bounds": {
+          "kind": "absolute",
+          "lower": 12.842631118996916,
+          "upper": 12.906208500774126
+        },
+        "precision": "LINE_LOADING_EDGE_ZERO_V1"
+      },
+      {
+        "id": "C2_free",
+        "type": "distribution",
+        "unit": "dimensionless",
+        "clause": "C2",
+        "stages": ["every_accepted_state"],
+        "objects": ["L2", "L3", "L4"],
+        "mode": "free"
+      },
+      {
+        "id": "C3_total_active_input",
+        "type": "input_sum",
+        "unit": "MW",
+        "clause": "C3",
+        "stages": ["baseline", "every_accepted_state"],
+        "objects": ["L1", "L2", "L3", "L4"],
+        "target": {
+          "op": "baseline_sum",
+          "state": "NJ_LINE_BASELINE_V1",
+          "quantity": "plini",
+          "objects": ["L1", "L2", "L3", "L4"]
+        },
+        "accuracy": "P_SUM_V1"
+      },
+      {
+        "id": "C4_each_baseline_qp",
+        "type": "qp_policy",
+        "unit": "Mvar",
+        "clause": "C4",
+        "stages": ["baseline", "every_accepted_state"],
+        "objects": ["L1", "L2", "L3", "L4"],
+        "state": "NJ_LINE_BASELINE_V1",
+        "policy": "each_baseline_ratio",
+        "accuracy": "QP_RESIDUAL_V1"
+      },
+      {
+        "id": "C5_adjustable_bounds",
+        "type": "alpha_bounds",
+        "unit": "dimensionless",
+        "clause": "C5",
+        "stages": ["baseline", "every_accepted_state"],
+        "objects": ["L2", "L3", "L4"],
+        "lower": 0.99,
+        "upper": 1.02,
+        "precision": "ALPHA_READ_V1"
+      },
+      {
+        "id": "C5_fixed_Shuf",
+        "type": "fixed_inputs",
+        "unit": "per_field",
+        "clause": "C5",
+        "stages": ["baseline", "every_accepted_state"],
+        "objects": ["L1"],
+        "state": "NJ_LINE_BASELINE_V1",
+        "fields": ["plini", "qlini"],
+        "accuracy": "FIXED_EXACT_V1"
+      },
+      {
+        "id": "C6_V1",
+        "type": "voltage_bounds",
+        "unit": "pu",
+        "clause": "C6",
+        "stages": ["baseline", "every_accepted_state"],
+        "objects": ["V1"],
+        "bounds": {
+          "kind": "absolute",
+          "lower": 0.9911242876845122,
+          "upper": 1.0011242876845121
+        },
+        "precision": "VOLTAGE_EDGE_ZERO_V1"
+      },
+      {
+        "id": "C6_V2",
+        "type": "voltage_bounds",
+        "unit": "pu",
+        "clause": "C6",
+        "stages": ["baseline", "every_accepted_state"],
+        "objects": ["V2"],
+        "bounds": {
+          "kind": "absolute",
+          "lower": 0.9945953542043262,
+          "upper": 1.0045953542043262
+        },
+        "precision": "VOLTAGE_EDGE_ZERO_V1"
+      },
+      {
+        "id": "C6_V3",
+        "type": "voltage_bounds",
+        "unit": "pu",
+        "clause": "C6",
+        "stages": ["baseline", "every_accepted_state"],
+        "objects": ["V3"],
+        "bounds": {
+          "kind": "absolute",
+          "lower": 0.995860618120925,
+          "upper": 1.0058606181209249
+        },
+        "precision": "VOLTAGE_EDGE_ZERO_V1"
+      },
+      {
+        "id": "C6_V4",
+        "type": "voltage_bounds",
+        "unit": "pu",
+        "clause": "C6",
+        "stages": ["baseline", "every_accepted_state"],
+        "objects": ["V4"],
+        "bounds": {
+          "kind": "absolute",
+          "lower": 1.0133168288134877,
+          "upper": 1.0233168288134875
+        },
+        "precision": "VOLTAGE_EDGE_ZERO_V1"
+      }
+    ],
+    "preserve": {
+      "other_load_inputs": true,
+      "topology": true,
+      "control_settings": true,
+      "flow_settings": true
+    }
+  },
+  "plan": {
+    "operation": "solve",
+    "selected": ["L2", "L3", "L4"],
+    "reason": "保持Shuf输入，由共同数值工具联合选择其余三个授权负荷的连续倍率，自由协调满足全部约束；各负荷P/Q从同一基准映射，保留Seli负Q符号及原输入模式，并保持原平衡与调压机制。"
+  }
+}

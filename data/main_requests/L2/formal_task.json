@@ -1,0 +1,66 @@
+{
+  "id": "L2",
+  "grid": "NJ",
+  "family": "line",
+  "A": [],
+  "B": [],
+  "fixed": [
+    "L1"
+  ],
+  "adjustable": [
+    "L2",
+    "L3",
+    "L4"
+  ],
+  "bounds": [
+    0.99,
+    1.02
+  ],
+  "purpose": "保持Shuf输入，检查其他负荷协调实现相同线路目标。",
+  "history": "明确复用line_scenario_v1/B的固定负荷组合。",
+  "voltage_bands": {
+    "V1": {
+      "lower": 0.9911242876845122,
+      "upper": 1.0011242876845121,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "保持原观察电压，不修复已有越限"
+    },
+    "V2": {
+      "lower": 0.9945953542043262,
+      "upper": 1.0045953542043262,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "保持原观察电压，不修复已有越限"
+    },
+    "V3": {
+      "lower": 0.995860618120925,
+      "upper": 1.0058606181209249,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "保持原观察电压，不修复已有越限"
+    },
+    "V4": {
+      "lower": 1.0133168288134877,
+      "upper": 1.0233168288134875,
+      "stages": [
+        "every_accepted_state"
+      ],
+      "purpose": "保持原观察电压，不修复已有越限"
+    }
+  },
+  "status": "controlled_engineering_research_requirement",
+  "line_bands": {
+    "E1": {
+      "lower": 12.842631118996916,
+      "upper": 12.906208500774126,
+      "stages": [
+        "final"
+      ],
+      "purpose": "相对基准负载率提高1%至1.5%；不是提高1个百分点，不称热过载"
+    }
+  }
+}

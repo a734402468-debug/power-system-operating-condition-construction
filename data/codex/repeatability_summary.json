@@ -1,0 +1,83 @@
+[
+  {
+    "task": "T2",
+    "planned": 3,
+    "complete": 3,
+    "first_strict": 3,
+    "final_strict": 3,
+    "revisions": 0,
+    "distinct_predicate_signatures": 1,
+    "distinct_candidate_signatures": 1,
+    "distinct_input_signatures": 1,
+    "CLI_seconds": [
+      144.26599999994505,
+      78.67200000002049,
+      144.625
+    ],
+    "output_tokens_including_reasoning": [
+      1385,
+      1346,
+      1412
+    ],
+    "total_tokens": [
+      16628,
+      16589,
+      16655
+    ],
+    "run1_already_in_main": true
+  },
+  {
+    "task": "V3",
+    "planned": 3,
+    "complete": 3,
+    "first_strict": 3,
+    "final_strict": 3,
+    "revisions": 0,
+    "distinct_predicate_signatures": 1,
+    "distinct_candidate_signatures": 1,
+    "distinct_input_signatures": 1,
+    "CLI_seconds": [
+      129.85899999993853,
+      129.21799999999348,
+      127.84399999992456
+    ],
+    "output_tokens_including_reasoning": [
+      574,
+      594,
+      599
+    ],
+    "total_tokens": [
+      13097,
+      13117,
+      13122
+    ],
+    "run1_already_in_main": true
+  },
+  {
+    "task": "L3",
+    "planned": 3,
+    "complete": 3,
+    "first_strict": 3,
+    "final_strict": 3,
+    "revisions": 0,
+    "distinct_predicate_signatures": 1,
+    "distinct_candidate_signatures": 1,
+    "distinct_input_signatures": 1,
+    "CLI_seconds": [
+      50.65599999995902,
+      138.53099999995902,
+      143.920999999973
+    ],
+    "output_tokens_including_reasoning": [
+      1307,
+      1291,
+      1293
+    ],
+    "total_tokens": [
+      17692,
+      17670,
+      17672
+    ],
+    "run1_already_in_main": true
+  }
+]

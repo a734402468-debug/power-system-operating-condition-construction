@@ -1,0 +1,149 @@
+{
+  "checks": [
+    {
+      "type": "fixed_parameter",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_100_1.ElmLod"
+      ],
+      "current_value": [
+        160.0
+      ],
+      "target_or_range": {
+        "field": "plini",
+        "value": 160.0
+      },
+      "pass": true
+    },
+    {
+      "type": "fixed_parameter",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_100_1.ElmLod"
+      ],
+      "current_value": [
+        18.0
+      ],
+      "target_or_range": {
+        "field": "qlini",
+        "value": 18.0
+      },
+      "pass": true
+    },
+    {
+      "type": "voltage_bounds",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\100 Glen Lyn.ElmTerm"
+      ],
+      "current_value": [
+        1.01699998764875
+      ],
+      "target_or_range": {
+        "lower": 1.0119999877014882,
+        "upper": 1.021999987701488
+      },
+      "pass": true
+    },
+    {
+      "type": "voltage_bounds",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\101 Wythe.ElmTerm"
+      ],
+      "current_value": [
+        0.9865534719016797
+      ],
+      "target_or_range": {
+        "lower": 0.981385013072658,
+        "upper": 0.991385013072658
+      },
+      "pass": true
+    },
+    {
+      "type": "voltage_bounds",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\102 Smythe.ElmTerm"
+      ],
+      "current_value": [
+        0.9813439409355573
+      ],
+      "target_or_range": {
+        "lower": 0.9762397545453265,
+        "upper": 0.9862397545453265
+      },
+      "pass": true
+    },
+    {
+      "type": "voltage_bounds",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\103 Claytor.ElmTerm"
+      ],
+      "current_value": [
+        1.0100000180488358
+      ],
+      "target_or_range": {
+        "lower": 1.0050000181018235,
+        "upper": 1.0150000181018233
+      },
+      "pass": true
+    },
+    {
+      "type": "voltage_bounds",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\104 Hancock.ElmTerm"
+      ],
+      "current_value": [
+        0.9710000424800481
+      ],
+      "target_or_range": {
+        "lower": 0.9660000425318596,
+        "upper": 0.9760000425318596
+      },
+      "pass": true
+    },
+    {
+      "type": "voltage_bounds",
+      "objects": [
+        "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\105 Roanoke.ElmTerm"
+      ],
+      "current_value": [
+        0.96500000026099
+      ],
+      "target_or_range": {
+        "lower": 0.9600000003123973,
+        "upper": 0.9700000003123973
+      },
+      "pass": true
+    }
+  ],
+  "candidate": {
+    "status": "candidate",
+    "alphas": {
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_100_1.ElmLod": 1.0,
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_101_1.ElmLod": 0.990864319526366,
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_102_1.ElmLod": 0.9977851194661688,
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_103_1.ElmLod": 1.0017677294071894,
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_104_1.ElmLod": 1.002787090927181,
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_105_1.ElmLod": 1.002296035402814
+    },
+    "adjustable_alphas": {
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_101_1.ElmLod": 0.990864319526366,
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_102_1.ElmLod": 0.9977851194661688,
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_103_1.ElmLod": 1.0017677294071894,
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_104_1.ElmLod": 1.002787090927181,
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\lod_105_1.ElmLod": 1.002296035402814
+    },
+    "predicted_values_pu": {
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\100 Glen Lyn.ElmTerm": 1.0169999876485865,
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\101 Wythe.ElmTerm": 0.9865535312628644,
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\102 Smythe.ElmTerm": 0.9813439808695469,
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\103 Claytor.ElmTerm": 1.0100000180486717,
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\104 Hancock.ElmTerm": 0.9710000424798861,
+      "\\MSI.IntUser\\PCL_Redistrib_261011_105851.IntPrj\\电网模型.IntPrjfolder\\电网数据.IntPrjfolder\\1 IEEE11.ElmNet\\105 Roanoke.ElmTerm": 0.9650000002608289
+    },
+    "equation_residuals": {},
+    "squared_multiplier_change": 0.00010453087515987446,
+    "active_constraints": [],
+    "phase": "exact_centers",
+    "faces_examined": 1,
+    "problem_sha256": "500546d34b1f005037f10a18058f67dfee429dd3ed7f99b6bcf4bb8222fa157b",
+    "is_physical_feasibility_evidence": false
+  }
+}

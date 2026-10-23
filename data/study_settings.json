@@ -1,0 +1,325 @@
+{
+  "scope": "Frozen study settings reproduced for manuscript revision; no new calculations.",
+  "source": "PowerCaseLab_CaseWriting_Data_v1/evaluator_only/derived/experiment_settings.json",
+  "systems": {
+    "CG": {
+      "reference_state_id": "CG_BASELINE_V1",
+      "load_flow_option_values": {
+        "iopt_apdist": 0,
+        "iopt_fls": 0,
+        "iopt_lim": 0,
+        "iPbalancing": 0,
+        "iopt_asht": 0,
+        "iopt_pq": 0,
+        "iopt_plim": 0,
+        "iopt_at": 0
+      },
+      "load_scale_percent": 100,
+      "finite_difference_step": 0.005,
+      "finite_difference": "one-sided per-load absolute factor perturbation at baseline factors 1; P and Q scaled together",
+      "precision_policies": {
+        "version": "precision-policy-v1",
+        "policies": {
+          "P_SUM_V1": {
+            "unit": "MW",
+            "user_allowed_error": 1.3636184692382813e-05,
+            "effective_evaluation_tolerance": 1.3636184692382813e-05,
+            "storage_policy": "existing preregistered float32 budget",
+            "extra_storage_error_added": 0.0,
+            "solver_policy": "retained-active-face-v1.1",
+            "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+          },
+          "QP_RESIDUAL_V1": {
+            "unit": "Mvar",
+            "user_allowed_error": 3.3364502601314728e-06,
+            "effective_evaluation_tolerance": 3.3364502601314728e-06,
+            "storage_policy": "existing preregistered float32 budget",
+            "extra_storage_error_added": 0.0,
+            "solver_policy": "retained-active-face-v1.1",
+            "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+          },
+          "ALPHA_READ_V1": {
+            "unit": "dimensionless",
+            "user_allowed_error": 1e-07,
+            "effective_evaluation_tolerance": 1e-07,
+            "storage_policy": "existing readback/exact-bound policy",
+            "extra_storage_error_added": 0.0,
+            "solver_policy": "retained-active-face-v1.1",
+            "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+          },
+          "FIXED_EXACT_V1": {
+            "unit": "per_field",
+            "user_allowed_error": 0.0,
+            "effective_evaluation_tolerance": 0.0,
+            "storage_policy": "existing readback/exact-bound policy",
+            "extra_storage_error_added": 0.0,
+            "solver_policy": "retained-active-face-v1.1",
+            "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+          },
+          "VOLTAGE_EDGE_ZERO_V1": {
+            "unit": "pu",
+            "user_allowed_error": 0.0,
+            "effective_evaluation_tolerance": 0.0,
+            "storage_policy": "existing readback/exact-bound policy",
+            "extra_storage_error_added": 0.0,
+            "solver_policy": "retained-active-face-v1.1",
+            "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+          },
+          "PROP_ALPHA_V1": {
+            "unit": "dimensionless",
+            "user_allowed_error": 2e-07,
+            "effective_evaluation_tolerance": 2e-07,
+            "storage_policy": "existing readback/exact-bound policy",
+            "extra_storage_error_added": 0.0,
+            "solver_policy": "retained-active-face-v1.1",
+            "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+          }
+        },
+        "rule": "User allowed deviation, storage uncertainty and numerical residual checks are distinct. Existing user budget already includes its preregistered storage allowance; never add it twice."
+      },
+      "catalogue": {
+        "L1": {
+          "kind": "load",
+          "name": "lod_100_1",
+          "base_inputs": {
+            "qlini": 18.0,
+            "plini": 160.0
+          }
+        },
+        "L2": {
+          "kind": "load",
+          "name": "lod_101_1",
+          "base_inputs": {
+            "qlini": 15.0,
+            "plini": 20.676830291748047
+          }
+        },
+        "L3": {
+          "kind": "load",
+          "name": "lod_102_1",
+          "base_inputs": {
+            "qlini": 3.0,
+            "plini": 5.0129499435424805
+          }
+        },
+        "L4": {
+          "kind": "load",
+          "name": "lod_103_1",
+          "base_inputs": {
+            "qlini": 16.0,
+            "plini": 21.871719360351562
+          }
+        },
+        "L5": {
+          "kind": "load",
+          "name": "lod_104_1",
+          "base_inputs": {
+            "qlini": 25.0,
+            "plini": 34.48405075073242
+          }
+        },
+        "L6": {
+          "kind": "load",
+          "name": "lod_105_1",
+          "base_inputs": {
+            "qlini": 26.0,
+            "plini": 28.4083309173584
+          }
+        },
+        "V1": {
+          "kind": "voltage",
+          "name": "100 Glen Lyn",
+          "baseline_voltage_pu": 1.0169999877014881
+        },
+        "V2": {
+          "kind": "voltage",
+          "name": "101 Wythe",
+          "baseline_voltage_pu": 0.986385013072658
+        },
+        "V3": {
+          "kind": "voltage",
+          "name": "102 Smythe",
+          "baseline_voltage_pu": 0.9812397545453265
+        },
+        "V4": {
+          "kind": "voltage",
+          "name": "103 Claytor",
+          "baseline_voltage_pu": 1.0100000181018234
+        },
+        "V5": {
+          "kind": "voltage",
+          "name": "104 Hancock",
+          "baseline_voltage_pu": 0.9710000425318596
+        },
+        "V6": {
+          "kind": "voltage",
+          "name": "105 Roanoke",
+          "baseline_voltage_pu": 0.9650000003123973
+        }
+      },
+      "control_option_descriptions": "PF15.2 official field/UI descriptions not included in supplied archive; author confirmation required before submission. Numeric values are transcribed, not inferred from field names."
+    },
+    "NJ": {
+      "reference_state_id": "NJ_BASELINE_V1",
+      "load_flow_option_values": {
+        "iopt_fls": 0,
+        "iopt_pq": 0,
+        "iopt_plim": 0,
+        "iopt_asht": 0,
+        "iPbalancing": 0,
+        "iopt_at": 0,
+        "iopt_apdist": 0,
+        "iopt_lim": 0
+      },
+      "load_scale_percent": 100,
+      "finite_difference_step": 0.005,
+      "finite_difference": "one-sided per-load absolute factor perturbation at baseline factors 1; P and Q scaled together",
+      "precision_policies": {
+        "version": "precision-policy-v1",
+        "policies": {
+          "P_SUM_V1": {
+            "unit": "MW",
+            "user_allowed_error": 2.388818359375e-05,
+            "effective_evaluation_tolerance": 2.388818359375e-05,
+            "storage_policy": "NJ archived float32 budget, unchanged; no extra allowance",
+            "extra_storage_error_added": 0.0,
+            "solver_policy": "retained-active-face-v1.1",
+            "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+          },
+          "QP_RESIDUAL_V1": {
+            "unit": "Mvar",
+            "user_allowed_error": 9.794873805516215e-06,
+            "effective_evaluation_tolerance": 9.794873805516215e-06,
+            "storage_policy": "NJ archived float32 budget, unchanged; no extra allowance",
+            "extra_storage_error_added": 0.0,
+            "solver_policy": "retained-active-face-v1.1",
+            "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+          },
+          "ALPHA_READ_V1": {
+            "unit": "dimensionless",
+            "user_allowed_error": 1e-07,
+            "effective_evaluation_tolerance": 1e-07,
+            "storage_policy": "existing readback/exact-bound policy",
+            "extra_storage_error_added": 0.0,
+            "solver_policy": "retained-active-face-v1.1",
+            "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+          },
+          "FIXED_EXACT_V1": {
+            "unit": "per_field",
+            "user_allowed_error": 0.0,
+            "effective_evaluation_tolerance": 0.0,
+            "storage_policy": "existing readback/exact-bound policy",
+            "extra_storage_error_added": 0.0,
+            "solver_policy": "retained-active-face-v1.1",
+            "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+          },
+          "VOLTAGE_EDGE_ZERO_V1": {
+            "unit": "pu",
+            "user_allowed_error": 0.0,
+            "effective_evaluation_tolerance": 0.0,
+            "storage_policy": "existing readback/exact-bound policy",
+            "extra_storage_error_added": 0.0,
+            "solver_policy": "retained-active-face-v1.1",
+            "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+          },
+          "PROP_ALPHA_V1": {
+            "unit": "dimensionless",
+            "user_allowed_error": 2e-07,
+            "effective_evaluation_tolerance": 2e-07,
+            "storage_policy": "existing readback/exact-bound policy",
+            "extra_storage_error_added": 0.0,
+            "solver_policy": "retained-active-face-v1.1",
+            "solver_relation_check": "1e-10*max(1,abs(b)) equalities; 1e-12*max(1,abs(b)) inequalities; not added to user acceptance"
+          }
+        },
+        "rule": "User allowed deviation, storage uncertainty and numerical residual checks are distinct. Existing user budget already includes its preregistered storage allowance; never add it twice."
+      },
+      "catalogue": {
+        "L1": {
+          "kind": "load",
+          "name": "Shuf_lod.ElmLod",
+          "base_inputs": {
+            "plini": 258.8999938964844,
+            "qlini": 84.5
+          }
+        },
+        "V1": {
+          "kind": "voltage",
+          "name": "Shuf115",
+          "baseline_voltage_pu": 0.9961242876845122
+        },
+        "L2": {
+          "kind": "load",
+          "name": "Jinx_lod.ElmLod",
+          "base_inputs": {
+            "plini": 71.4000015258789,
+            "qlini": 48.79999923706055
+          }
+        },
+        "V2": {
+          "kind": "voltage",
+          "name": "Jinx230",
+          "baseline_voltage_pu": 0.9995953542043262
+        },
+        "L3": {
+          "kind": "load",
+          "name": "Aoy_load.ElmLod",
+          "base_inputs": {
+            "plini": 51.0,
+            "qlini": 10.699999809265137
+          }
+        },
+        "V3": {
+          "kind": "voltage",
+          "name": "Aoy115",
+          "baseline_voltage_pu": 1.000860618120925
+        },
+        "L4": {
+          "kind": "load",
+          "name": "Seli_lod.ElmLod",
+          "base_inputs": {
+            "plini": 32.0,
+            "qlini": -3.5999999046325684
+          }
+        },
+        "V4": {
+          "kind": "voltage",
+          "name": "Seli230",
+          "baseline_voltage_pu": 1.0183168288134876
+        }
+      },
+      "control_option_descriptions": "PF15.2 official field/UI descriptions not included in supplied archive; author confirmation required before submission. Numeric values are transcribed, not inferred from field names."
+    }
+  },
+  "preparation_AC_counts": {
+    "CG_reported_historical_acquisition": 11,
+    "CG_caveat": "Complete original acquisition timeline not in the supplied package; not 11 independent perturbation probes.",
+    "NJ_sensitivity_session": 6,
+    "NJ_session_components": {
+      "baseline": 1,
+      "load_probes": 4,
+      "restoration": 1
+    },
+    "NJ_line_sensitivities": "Reused the same four archived NJ load probes; no additional response sampling."
+  },
+  "NJ_selected_sensitivities": {
+    "load_order": [
+      "Shuf",
+      "Jinx",
+      "Aoy",
+      "Seli"
+    ],
+    "line_loading_percentage_points_per_factor": [
+      0.004592491812260846,
+      12.915579065304428,
+      -0.000653994388599699,
+      -0.0004529272064957013
+    ],
+    "Shuf_voltage_pu_per_factor": [
+      -0.014738443932094114,
+      -0.00020983477810876394,
+      -0.00039228269748114997,
+      8.48138363984674e-06
+    ]
+  }
+}

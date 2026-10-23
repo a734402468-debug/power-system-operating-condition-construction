@@ -1,0 +1,13 @@
+{
+  "version": "nj-common-contract-clarifications-v2-baseline-certificate",
+  "scope": "Public clarification of unchanged existing parser/expander; both tasks receive the identical text.",
+  "rules": [
+    "每条要求对象的约束，其objects必须为非空、唯一且角色合法的公开ID数组。",
+    "没有适用对象时，省略该条约束，不要提交objects=[]的空对象条款。不得因此省略有适用对象的原始要求。",
+    "多条约束共同生效，全部必须同时满足；后面的条款不会覆盖、替换或取消前面的条款。",
+    "一个区间作用于该条objects中的每个对象。将多个对象写在同一区间下，必须符合原始需求；不能默认共用某一个对象的区间。",
+    "使用逐对象基准表达式时，只能采用当前公开合同已有的形式，引用明确的参考状态并绑定各对象自己的基准值。baseline_band按每个列出的对象各自电压展开；voltage_interval的delta只绑定其唯一母线；不能创造未支持的表达式。"
+  ],
+  "unchanged": "原需求、对象目录、权限、数值、阶段、精度政策和实际解析器均不修改。引用原文仅为溯源，不能代替需求忠实性。",
+  "frozen_baseline_note": "baseline是已冻结的参考输入，不是待优化状态。仅baseline固定值检查不会限制后续状态；final/accepted的固定项仍是实际约束，必须按原文声明。程序只在严格状态/来源和实际构建证明成立时做隔离评分认证，不补写你的规格。"
+}
