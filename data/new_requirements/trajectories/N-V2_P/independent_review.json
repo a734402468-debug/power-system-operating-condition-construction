@@ -1,9 +1,0 @@
-{
-  "status": "certified",
-  "basis": "Exact existing normalized predicate equality, including registered phase union/singletons/fixed-PQ implication",
-  "source_answer_sha256": "9e3eb7db14918719dc97a26d28eacd4940c0333f8e4f56e911ef5f79dae94861",
-  "rules": "old_definition/evaluation_rules.json",
-  "new_rules": false,
-  "output_modified": false,
-  "reference_never_sent": true
-}

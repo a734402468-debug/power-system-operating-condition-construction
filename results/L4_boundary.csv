@@ -1,0 +1,2 @@
+case,line,lower_loading_percent,upper_loading_percent,actual_loading_percent,shortfall_percentage_points,additional_tolerance,passed
+L4,Jinl-Seli,6.677618306764409,6.67961830676441,6.677617571777845,7.349865640549069e-07,0.0,False

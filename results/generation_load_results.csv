@@ -1,0 +1,4 @@
+task,first_contract,first_semantic,specification_revisions,numeric,first_physical,numerical_corrections,correction_result,final_physical,strict_final,shared
+S-T,True,certified_existing_fixed_input_rule,0,candidate,physical_unmet,1,passed,passed,True,False
+S-V,True,confirmed_stage_strengthening,0,not_executed,not_executed,0,not_applicable,not_executed,False,False
+S-L,False,not_evaluated,1,candidate,passed,0,not_applicable,passed,True,True

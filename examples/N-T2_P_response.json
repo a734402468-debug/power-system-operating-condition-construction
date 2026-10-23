@@ -1,0 +1,118 @@
+{
+  "specification": {
+    "baseline_state": "base_v1",
+    "variables": {
+      "objects": ["L1", "L2", "L4", "L5", "L6"],
+      "mapping": "baseline_PQ_times_absolute_alpha"
+    },
+    "constraints": [
+      {
+        "id": "transfer",
+        "type": "transfer",
+        "unit": "MW",
+        "clause": "C1",
+        "source": ["L2", "L3", "L5"],
+        "destination": ["L1", "L4", "L6"],
+        "amount": {
+          "op": "literal",
+          "value": 0.2,
+          "unit": "MW"
+        },
+        "accuracy": "P_SUM_V1",
+        "stages": ["final"]
+      },
+      {
+        "id": "free_source",
+        "type": "distribution",
+        "unit": "dimensionless",
+        "clause": "C2",
+        "objects": ["L2", "L5"],
+        "mode": "free",
+        "stages": ["every_accepted_state"]
+      },
+      {
+        "id": "free_dest",
+        "type": "distribution",
+        "unit": "dimensionless",
+        "clause": "C2",
+        "objects": ["L1", "L4", "L6"],
+        "mode": "free",
+        "stages": ["every_accepted_state"]
+      },
+      {
+        "id": "sum",
+        "type": "input_sum",
+        "unit": "MW",
+        "clause": "C3",
+        "objects": ["L1", "L2", "L3", "L4", "L5", "L6"],
+        "target": {
+          "op": "baseline_sum",
+          "state": "base_v1",
+          "quantity": "plini",
+          "objects": ["L1", "L2", "L3", "L4", "L5", "L6"]
+        },
+        "accuracy": "P_SUM_V1",
+        "stages": ["every_accepted_state"]
+      },
+      {
+        "id": "qp",
+        "type": "qp_policy",
+        "unit": "Mvar",
+        "clause": "C4",
+        "objects": ["L1", "L2", "L3", "L4", "L5", "L6"],
+        "state": "base_v1",
+        "policy": "each_baseline_ratio",
+        "accuracy": "QP_RESIDUAL_V1",
+        "stages": ["every_accepted_state"]
+      },
+      {
+        "id": "lock",
+        "type": "fixed_inputs",
+        "unit": "per_field",
+        "clause": "C5",
+        "objects": ["L3"],
+        "state": "base_v1",
+        "fields": ["plini", "qlini"],
+        "accuracy": "FIXED_EXACT_V1",
+        "stages": ["every_accepted_state"]
+      },
+      {
+        "id": "limits",
+        "type": "alpha_bounds",
+        "unit": "dimensionless",
+        "clause": "C5",
+        "objects": ["L1", "L2", "L3", "L4", "L5", "L6"],
+        "lower": 0.99,
+        "upper": 1.02,
+        "precision": "ALPHA_READ_V1",
+        "stages": ["every_accepted_state"]
+      },
+      {
+        "id": "volts",
+        "type": "voltage_bounds",
+        "unit": "pu",
+        "clause": "C6",
+        "objects": ["V1", "V2", "V3", "V4", "V5", "V6"],
+        "bounds": {
+          "kind": "baseline_band",
+          "state": "base_v1",
+          "lower_offset": -0.005,
+          "upper_offset": 0.005
+        },
+        "precision": "VOLTAGE_EDGE_ZERO_V1",
+        "stages": ["every_accepted_state"]
+      }
+    ],
+    "preserve": {
+      "other_load_inputs": true,
+      "topology": true,
+      "control_settings": true,
+      "flow_settings": true
+    }
+  },
+  "plan": {
+    "operation": "solve",
+    "selected": ["L1", "L2", "L4", "L5", "L6"],
+    "reason": "Construct opposite-set load redistribution test state: fixed L3, free coordination among remaining loads, 0.2 MW transfer from {L2,L3,L5} to {L1,L4,L6} at final stage."
+  }
+}

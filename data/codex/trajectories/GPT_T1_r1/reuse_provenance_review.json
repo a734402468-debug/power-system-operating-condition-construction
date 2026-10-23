@@ -1,6 +1,0 @@
-{
-  "observation_source": "<PROJECT_ROOT>\\artifacts\\three_backend_applicability_v1\\20261018_batch01\\trajectories\\Q122_T1_r1\\physical",
-  "historical_in_this_batch": true,
-  "legacy_shared_record_historical": false,
-  "explanation": "Retained dispatcher historical flag only tested membership of 20261017 SOURCE. This supplement also reuses the 20261018 observation; any source outside the current RUN is historical. Original binding and acceptance unchanged."
-}

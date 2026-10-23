@@ -1,7 +1,0 @@
-observation,status,inputs_exactly_restored,controls_unchanged,other_load_inputs_unchanged,source_inputs_unchanged,key_result_count,maximum_difference,key_result_pass,AC
-<PROJECT_ROOT>\artifacts\postfreeze_combinations_continuation_v1\20261021_cont01\trajectories\N-T1_B\physical,passed,True,True,True,True,799,0.0,True,3
-<PROJECT_ROOT>\artifacts\postfreeze_combinations_continuation_v1\20261021_cont01\trajectories\N-T2_P\physical,passed,True,True,True,True,799,0.0,True,3
-<PROJECT_ROOT>\artifacts\postfreeze_combinations_continuation_v1\20261021_cont01\trajectories\N-T3_B\physical,passed,True,True,True,True,799,0.0,True,3
-<PROJECT_ROOT>\artifacts\postfreeze_combinations_continuation_v1\20261021_cont01\trajectories\N-V1_P\physical,passed,True,True,True,True,799,0.0,True,3
-<PROJECT_ROOT>\artifacts\postfreeze_combinations_continuation_v1\20261021_cont01\trajectories\N-V2_B\physical,passed,True,True,True,True,799,0.0,True,3
-<PROJECT_ROOT>\artifacts\postfreeze_combinations_continuation_v1\20261021_cont01\trajectories\N-V3_P\physical,passed,True,True,True,True,799,0.0,True,3

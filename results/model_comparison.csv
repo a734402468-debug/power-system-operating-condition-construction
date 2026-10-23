@@ -1,0 +1,49 @@
+case,model,protocol,run,first_response_complete,first_format_valid,first_requirements,final_requirements,revisions,first_completion,final_completion,numerical_result,physical_result,failure,input_tokens,output_tokens
+T1,deepseek-ai/DeepSeek-V4-Pro,Common API,1,True,True,confirmed_error,confirmed_error,0,False,False,not_solved,not_executed,confirmed_semantic_error,6868,966
+T2,deepseek-ai/DeepSeek-V4-Pro,Common API,1,True,True,certified,certified,0,True,True,candidate,passed,,6867,1549
+T3,deepseek-ai/DeepSeek-V4-Pro,Common API,1,True,True,certified,certified,0,True,True,candidate,passed,,6550,1261
+T4,deepseek-ai/DeepSeek-V4-Pro,Common API,1,True,True,certified,certified,0,True,True,candidate,passed,,6524,1200
+V1,deepseek-ai/DeepSeek-V4-Pro,Common API,1,True,True,confirmed_error,confirmed_error,0,False,False,not_solved,not_executed,confirmed_semantic_error,4184,1048
+V2,deepseek-ai/DeepSeek-V4-Pro,Common API,1,True,True,confirmed_error,confirmed_error,0,False,False,not_solved,not_executed,confirmed_semantic_error,4177,980
+V3,deepseek-ai/DeepSeek-V4-Pro,Common API,1,True,False,not_evaluated_contract_failure,certified,1,False,True,candidate,passed,,9032,1580
+V4,deepseek-ai/DeepSeek-V4-Pro,Common API,1,True,True,certified,certified,0,True,True,candidate,passed,,3853,826
+L1,deepseek-ai/DeepSeek-V4-Pro,Common API,1,True,True,certified,certified,0,True,True,candidate,passed,,8103,1273
+L2,deepseek-ai/DeepSeek-V4-Pro,Common API,1,True,True,certified,certified,0,True,True,candidate,passed,,8086,1361
+L3,deepseek-ai/DeepSeek-V4-Pro,Common API,1,True,True,certified,certified,0,True,True,candidate,passed,,8094,1273
+L4,deepseek-ai/DeepSeek-V4-Pro,Common API,1,True,True,certified,certified,0,False,False,candidate,physical_unmet,physical_acceptance,8153,1398
+T1,Qwen/Qwen3.5-122B-A10B,Common API,1,True,True,certified,certified,0,True,True,candidate,passed,,6797,1967
+T1,Qwen/Qwen3.5-35B-A3B,Common API,1,True,True,confirmed_error,confirmed_error,0,False,False,not_solved,not_executed,confirmed_semantic_error,6797,2085
+T2,Qwen/Qwen3.5-35B-A3B,Common API,1,True,True,confirmed_error,confirmed_error,0,False,False,not_solved,not_executed,confirmed_semantic_error,6795,2192
+T2,Qwen/Qwen3.5-122B-A10B,Common API,1,True,True,certified,certified,0,True,True,candidate,passed,,6795,2032
+T3,Qwen/Qwen3.5-122B-A10B,Common API,1,True,False,not_certified_runtime_diagnosis,certified,1,False,True,candidate,passed,,15476,3437
+T3,Qwen/Qwen3.5-35B-A3B,Common API,1,True,True,confirmed_error,confirmed_error,0,False,False,not_solved,not_executed,confirmed_semantic_error,6357,1631
+T4,Qwen/Qwen3.5-35B-A3B,Common API,1,True,False,not_certified_runtime_diagnosis,certified,1,False,True,candidate,passed,,14933,3319
+T4,Qwen/Qwen3.5-122B-A10B,Common API,1,True,True,certified,certified,0,True,True,candidate,passed,,6334,1614
+V1,Qwen/Qwen3.5-122B-A10B,Common API,1,True,True,confirmed_error,confirmed_error,0,False,False,not_solved,not_executed,confirmed_semantic_error,4395,1558
+V1,Qwen/Qwen3.5-35B-A3B,Common API,1,True,True,confirmed_error,confirmed_error,0,False,False,not_solved,not_executed,confirmed_semantic_error,4395,1764
+V2,Qwen/Qwen3.5-35B-A3B,Common API,1,True,True,confirmed_error,confirmed_error,0,False,False,not_solved,not_executed,confirmed_semantic_error,4385,1393
+V2,Qwen/Qwen3.5-122B-A10B,Common API,1,True,True,confirmed_error,confirmed_error,0,False,False,not_solved,not_executed,confirmed_semantic_error,4385,1541
+V3,Qwen/Qwen3.5-122B-A10B,Common API,1,True,False,not_certified_runtime_diagnosis,confirmed_error,1,False,False,not_solved,not_executed,confirmed_semantic_error,10048,3402
+V3,Qwen/Qwen3.5-35B-A3B,Common API,1,True,True,confirmed_error,confirmed_error,0,False,False,not_solved,not_executed,confirmed_semantic_error,3957,1462
+V4,Qwen/Qwen3.5-35B-A3B,Common API,1,True,True,certified,certified,0,True,True,candidate,passed,,3945,1553
+V4,Qwen/Qwen3.5-122B-A10B,Common API,1,True,True,confirmed_error,confirmed_error,0,False,False,not_solved,not_executed,confirmed_semantic_error,3945,1185
+L1,Qwen/Qwen3.5-122B-A10B,Common API,1,True,True,certified,certified,0,True,True,candidate,passed,,8141,1586
+L1,Qwen/Qwen3.5-35B-A3B,Common API,1,True,True,confirmed_error,confirmed_error,0,False,False,not_solved,not_executed,confirmed_semantic_error,8141,1727
+L2,Qwen/Qwen3.5-35B-A3B,Common API,1,True,True,certified,certified,0,True,True,candidate,passed,,8123,1685
+L2,Qwen/Qwen3.5-122B-A10B,Common API,1,True,True,certified,certified,0,True,True,candidate,passed,,8123,1695
+L3,Qwen/Qwen3.5-122B-A10B,Common API,1,True,True,certified,certified,0,True,True,candidate,passed,,8131,1599
+L3,Qwen/Qwen3.5-35B-A3B,Common API,1,True,False,not_certified_runtime_diagnosis,confirmed_error,1,False,False,not_solved,not_executed,confirmed_semantic_error,18925,3468
+L4,Qwen/Qwen3.5-35B-A3B,Common API,1,True,True,confirmed_error,confirmed_error,0,False,False,not_solved,not_executed,confirmed_semantic_error,8207,1841
+L4,Qwen/Qwen3.5-122B-A10B,Common API,1,False,,not_evaluated_incomplete,not_evaluated_incomplete,0,False,False,not_solved,not_executed,call_incomplete,,
+T1,gpt-6.1-sol,Separate Codex configuration,1,True,True,certified,certified,0,True,True,candidate,passed,,15250,1265
+T2,gpt-6.1-sol,Separate Codex configuration,1,True,True,certified,certified,0,True,True,candidate,passed,,15243,1385
+T3,gpt-6.1-sol,Separate Codex configuration,1,True,True,certified,certified,0,True,True,candidate,passed,,14954,1053
+T4,gpt-6.1-sol,Separate Codex configuration,1,True,True,certified,certified,0,True,True,candidate,passed,,14913,1029
+V1,gpt-6.1-sol,Separate Codex configuration,1,True,True,certified,certified,0,True,True,candidate,passed,,12833,766
+V2,gpt-6.1-sol,Separate Codex configuration,1,True,True,certified,certified,0,True,True,candidate,passed,,12824,763
+V3,gpt-6.1-sol,Separate Codex configuration,1,True,True,certified,certified,0,True,True,candidate,passed,,12523,574
+V4,gpt-6.1-sol,Separate Codex configuration,1,True,True,certified,certified,0,True,True,candidate,passed,,12513,647
+L1,gpt-6.1-sol,Separate Codex configuration,1,True,True,certified,certified,0,True,True,candidate,passed,,16388,1321
+L2,gpt-6.1-sol,Separate Codex configuration,1,True,True,certified,certified,0,True,True,candidate,passed,,16368,1382
+L3,gpt-6.1-sol,Separate Codex configuration,1,True,True,certified,certified,0,True,True,candidate,passed,,16385,1307
+L4,gpt-6.1-sol,Separate Codex configuration,1,True,True,certified,certified,0,False,False,candidate,physical_unmet,physical_acceptance,16440,1404

@@ -1,0 +1,13 @@
+task,method,complete_return,contract,automatic_semantic,semantic,numerical,physical,strict_complete,failure_layer,input_tokens,output_tokens,total_tokens,shared
+N-T1,B,True,True,True,certified,candidate,passed,True,none,6892,2625,9517,False
+N-T1,P,True,True,True,certified,candidate,passed,True,none,7031,1063,8094,True
+N-T2,P,True,True,True,certified,candidate,passed,True,none,7033,1050,8083,False
+N-T2,B,True,True,False,proven_semantic_error,not_executed,not_executed,False,semantic_extra_constraint,6894,2591,9485,not_applicable
+N-T3,B,True,True,True,certified,candidate,passed,True,none,6892,2609,9501,False
+N-T3,P,True,True,True,certified,candidate,passed,True,none,7031,1046,8077,True
+N-V1,P,True,True,False,certified,candidate,passed,True,none,3966,764,4730,False
+N-V1,B,True,True,False,certified,candidate,passed,True,none,5253,1541,6794,True
+N-V2,B,True,True,False,certified,candidate,passed,True,none,5252,1547,6799,False
+N-V2,P,True,True,False,certified,candidate,passed,True,none,3965,708,4673,True
+N-V3,P,True,True,False,certified,candidate,passed,True,none,3962,709,4671,False
+N-V3,B,True,True,False,certified,candidate,passed,True,none,5249,1542,6791,True

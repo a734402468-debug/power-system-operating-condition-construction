@@ -1,7 +1,0 @@
-task,B_semantic,P_semantic,B_strict,P_strict,outcome,both_semantic_qualified,B_input_tokens,P_input_tokens,B_output_tokens,P_output_tokens,B_total_tokens,P_total_tokens,B_seconds,P_seconds,output_tokens_reduction_percent,total_tokens_reduction_percent
-N-T1,certified,certified,True,True,both_success,True,6892,7031,2625,1063,9517,8094,67.18800000008196,23.094000000040978,59.50476190476191,14.95219081643375
-N-T2,proven_semantic_error,certified,False,True,P_only,False,not_comparable,not_comparable,not_comparable,not_comparable,not_comparable,not_comparable,not_comparable,not_comparable,not_comparable,not_comparable
-N-T3,certified,certified,True,True,both_success,True,6892,7031,2609,1046,9501,8077,79.14100000006147,31.68799999996554,59.90801073208126,14.987896010946216
-N-V1,certified,certified,True,True,both_success,True,5253,3966,1541,764,6794,4730,50.18700000003446,19.219000000040978,50.42180402336145,30.379746835443036
-N-V2,certified,certified,True,True,both_success,True,5252,3965,1547,708,6799,4673,45.625,25.328000000095926,54.23400129282482,31.269304309457272
-N-V3,certified,certified,True,True,both_success,True,5249,3962,1542,709,6791,4671,35.5,17.25,54.02075226977951,31.21778824915329

@@ -1,3 +1,0 @@
-group,semantic_certified,denominator,physical_tasks,local_only_tasks,P_answer_token_reduction_percent,P_total_token_reduction_percent,claim,source,new_calls
-B,4,4,"Q1,Q3","Q2,Q4",58.55,22.75,Within-batch compact expression observation; no fidelity/speed/fee/human-efficiency superiority,artifacts/association_screen_v1/20261016_batch01/report.md,0
-P,4,4,"Q1,Q3","Q2,Q4",58.55,22.75,Within-batch compact expression observation; no fidelity/speed/fee/human-efficiency superiority,artifacts/association_screen_v1/20261016_batch01/report.md,0

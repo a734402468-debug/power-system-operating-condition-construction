@@ -1,0 +1,259 @@
+{
+  "baseline_state": "CG_BASELINE_V1",
+  "variables": {
+    "objects": [
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6"
+    ],
+    "mapping": "baseline_PQ_times_absolute_alpha"
+  },
+  "constraints": [
+    {
+      "id": "transfer",
+      "type": "transfer",
+      "unit": "MW",
+      "clause": "C1",
+      "source": [
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "destination": [
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "amount": {
+        "op": "literal",
+        "value": 0.2,
+        "unit": "MW"
+      },
+      "accuracy": "P_SUM_V1",
+      "stages": [
+        "final"
+      ]
+    },
+    {
+      "id": "free_coordination",
+      "type": "distribution",
+      "unit": "dimensionless",
+      "clause": "C2",
+      "objects": [
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "mode": "free",
+      "stages": [
+        "every_accepted_state"
+      ]
+    },
+    {
+      "id": "total_sum",
+      "type": "input_sum",
+      "unit": "MW",
+      "clause": "C3",
+      "objects": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "target": {
+        "op": "baseline_sum",
+        "state": "CG_BASELINE_V1",
+        "quantity": "plini",
+        "objects": [
+          "L1",
+          "L2",
+          "L3",
+          "L4",
+          "L5",
+          "L6"
+        ]
+      },
+      "accuracy": "P_SUM_V1",
+      "stages": [
+        "every_accepted_state"
+      ]
+    },
+    {
+      "id": "qp_policy",
+      "type": "qp_policy",
+      "unit": "Mvar",
+      "clause": "C4",
+      "objects": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "state": "CG_BASELINE_V1",
+      "policy": "each_baseline_ratio",
+      "accuracy": "QP_RESIDUAL_V1",
+      "stages": [
+        "every_accepted_state"
+      ]
+    },
+    {
+      "id": "fixed_L1",
+      "type": "fixed_inputs",
+      "unit": "per_field",
+      "clause": "C5",
+      "objects": [
+        "L1"
+      ],
+      "state": "CG_BASELINE_V1",
+      "fields": [
+        "plini",
+        "qlini"
+      ],
+      "accuracy": "FIXED_EXACT_V1",
+      "stages": [
+        "every_accepted_state"
+      ]
+    },
+    {
+      "id": "alpha_bounds",
+      "type": "alpha_bounds",
+      "unit": "dimensionless",
+      "clause": "C5",
+      "objects": [
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6"
+      ],
+      "lower": 0.99,
+      "upper": 1.02,
+      "precision": "ALPHA_READ_V1",
+      "stages": [
+        "every_accepted_state"
+      ]
+    },
+    {
+      "id": "voltage_V1",
+      "type": "voltage_bounds",
+      "unit": "pu",
+      "clause": "C6",
+      "objects": [
+        "V1"
+      ],
+      "bounds": {
+        "kind": "absolute",
+        "lower": 1.0119999877014882,
+        "upper": 1.021999987701488
+      },
+      "precision": "VOLTAGE_EDGE_ZERO_V1",
+      "stages": [
+        "every_accepted_state"
+      ]
+    },
+    {
+      "id": "voltage_V2",
+      "type": "voltage_bounds",
+      "unit": "pu",
+      "clause": "C6",
+      "objects": [
+        "V2"
+      ],
+      "bounds": {
+        "kind": "absolute",
+        "lower": 0.981385013072658,
+        "upper": 0.991385013072658
+      },
+      "precision": "VOLTAGE_EDGE_ZERO_V1",
+      "stages": [
+        "every_accepted_state"
+      ]
+    },
+    {
+      "id": "voltage_V3",
+      "type": "voltage_bounds",
+      "unit": "pu",
+      "clause": "C6",
+      "objects": [
+        "V3"
+      ],
+      "bounds": {
+        "kind": "absolute",
+        "lower": 0.9762397545453265,
+        "upper": 0.9862397545453265
+      },
+      "precision": "VOLTAGE_EDGE_ZERO_V1",
+      "stages": [
+        "every_accepted_state"
+      ]
+    },
+    {
+      "id": "voltage_V4",
+      "type": "voltage_bounds",
+      "unit": "pu",
+      "clause": "C6",
+      "objects": [
+        "V4"
+      ],
+      "bounds": {
+        "kind": "absolute",
+        "lower": 1.0050000181018235,
+        "upper": 1.0150000181018233
+      },
+      "precision": "VOLTAGE_EDGE_ZERO_V1",
+      "stages": [
+        "every_accepted_state"
+      ]
+    },
+    {
+      "id": "voltage_V5",
+      "type": "voltage_bounds",
+      "unit": "pu",
+      "clause": "C6",
+      "objects": [
+        "V5"
+      ],
+      "bounds": {
+        "kind": "absolute",
+        "lower": 0.9660000425318596,
+        "upper": 0.9760000425318596
+      },
+      "precision": "VOLTAGE_EDGE_ZERO_V1",
+      "stages": [
+        "every_accepted_state"
+      ]
+    },
+    {
+      "id": "voltage_V6",
+      "type": "voltage_bounds",
+      "unit": "pu",
+      "clause": "C6",
+      "objects": [
+        "V6"
+      ],
+      "bounds": {
+        "kind": "absolute",
+        "lower": 0.9600000003123973,
+        "upper": 0.9700000003123973
+      },
+      "precision": "VOLTAGE_EDGE_ZERO_V1",
+      "stages": [
+        "every_accepted_state"
+      ]
+    }
+  ],
+  "preserve": {
+    "other_load_inputs": true,
+    "topology": true,
+    "control_settings": true,
+    "flow_settings": true
+  }
+}

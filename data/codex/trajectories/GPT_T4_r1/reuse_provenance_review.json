@@ -1,6 +1,0 @@
-{
-  "observation_source": "<PROJECT_ROOT>\\artifacts\\paper_formal_cases_v1\\20261017_batch01\\T4\\physical",
-  "historical_in_this_batch": true,
-  "legacy_shared_record_historical": true,
-  "explanation": "Retained dispatcher historical flag only tested membership of 20261017 SOURCE. This supplement also reuses the 20261018 observation; any source outside the current RUN is historical. Original binding and acceptance unchanged."
-}
