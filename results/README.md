@@ -2,7 +2,7 @@
 
 | Files | Content |
 |---|---|
-| `model_comparison.csv` | Twelve main cases for each of the three API models and the separate Codex configuration |
+| `model_comparison.csv` | Twelve main cases for each of the four API model configurations |
 | `repeated_runs.csv` | Three runs each for T2, V3, and L3; run 1 is already included in the main results |
 | `load_adjustments.csv`, `bus_voltages.csv`, `line_loading.csv` | Numerical and AC results for the main examples and load-allocation comparison |
 | `paired_requirements.csv`, `paired_tokens.csv` | Outcomes and token usage for the six additional B/P pairs |
@@ -19,7 +19,7 @@ B denotes basic constraints and P linked requirements. In the load-allocation co
 
 In `paired_requirements.csv`, `automatic_semantic` retains the original automated check and `semantic` the subsequent assessment under the existing equivalence rules. Their difference for the load-growth requests is explained in Supplementary Section S4. No generated answer was changed. `shared=True` identifies use of the other expression's physical observation for identical settings on the same request. Eleven admitted specifications are supported by six independent new physical observations and five paired reuses.
 
-The API and Codex configurations have different calling conditions and are reported separately. The Codex study used two new independent physical observations and sixteen historical observations across its eighteen runs. Repeated generations and shared observations are not independent power-flow repetitions.
+The generation settings for the four API configurations are reported in Supplementary Sections S6–S7. The GPT API study used two new independent physical observations and sixteen historical observations across its eighteen runs. Repeated generations and shared observations are not independent power-flow repetitions.
 
 The paired token comparison uses the five requests for which both expressions passed the requirement check; N-T2 is excluded. The reductions are calculated from summed tokens. Input and output tokens are service-reported counts and do not measure monetary cost or human effort.
 
