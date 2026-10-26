@@ -1,8 +1,10 @@
 # Main operating requirements
 
-The following Chinese texts are the recorded requirements used in the twelve main cases. Load and bus identifiers follow the manuscript and Supplementary Section S1.
+The following Chinese texts are the original requirements for Cases 1–12. The case numbers follow the paper, and archived identifiers are given below each title for locating the result tables and model responses. The task texts retain their original device names and reference-state identifiers: CG denotes the IEEE 118-bus system, and NJ the regional system in Northwest China.
 
-## T1
+## Case 1: Load redistribution at fixed total load input
+
+Archived identifier: `T1`.
 
 T1：在同一总负荷输入下构造不同负荷分布，供稳态潮流对比及算法测试。
 这是固定模型中的受控研究任务，集合为登记设备清单，不称实际地理区域。参考状态为CG_BASELINE_V1。
@@ -22,7 +24,9 @@ V6（105 Roanoke）∈[0.9600000003123973,0.9700000003123973] pu；baseline及ev
 C7：其他输入、拓扑、共享类型、控制设置及潮流配置不变。保留原平衡及调压机制；配置不变不要求机组连续P/Q不变。不修复已有越限，不宣称全网健康。试算不自动成为接受状态，不解释成动态轨迹。
 精度政策：P_SUM_V1=1.3636184692382813e-05 MW（两侧和总量分别验收）；QP_RESIDUAL_V1=3.3364502601314728e-06 Mvar；ALPHA_READ_V1=1e-7；PROP_ALPHA_V1=2e-7；FIXED_EXACT_V1=0；VOLTAGE_EDGE_ZERO_V1=0 pu。不重复叠加存储预算；求解残差检查不放宽物理端点。
 
-## T2
+## Case 2: Load redistribution with one fixed load
+
+Archived identifier: `T2`.
 
 T2：保留大负荷L1输入，检查其余负荷是否能完成指定转移；固定成员仍计入A统计。
 这是固定模型中的受控研究任务，集合为登记设备清单，不称实际地理区域。参考状态为CG_BASELINE_V1。
@@ -42,7 +46,9 @@ V6（105 Roanoke）∈[0.9600000003123973,0.9700000003123973] pu；baseline及ev
 C7：其他输入、拓扑、共享类型、控制设置及潮流配置不变。保留原平衡及调压机制；配置不变不要求机组连续P/Q不变。不修复已有越限，不宣称全网健康。试算不自动成为接受状态，不解释成动态轨迹。
 精度政策：P_SUM_V1=1.3636184692382813e-05 MW（两侧和总量分别验收）；QP_RESIDUAL_V1=3.3364502601314728e-06 Mvar；ALPHA_READ_V1=1e-7；PROP_ALPHA_V1=2e-7；FIXED_EXACT_V1=0；VOLTAGE_EDGE_ZERO_V1=0 pu。不重复叠加存储预算；求解残差检查不放宽物理端点。
 
-## T3
+## Case 3: Proportional redistribution between two load groups
+
+Archived identifier: `T3`.
 
 T3：构造两组按各自基准负荷构成比例分担的最终输入转移工况；不约束过程比例。
 这是固定模型中的受控研究任务，集合为登记设备清单，不称实际地理区域。参考状态为NJ_BASELINE_V1。
@@ -60,7 +66,9 @@ V4（Seli230）∈[1.0133168288134877,1.0233168288134875] pu；baseline及every_
 C7：其他输入、拓扑、共享类型、控制设置及潮流配置不变。保留原平衡及调压机制；配置不变不要求机组连续P/Q不变。不修复已有越限，不宣称全网健康。试算不自动成为接受状态，不解释成动态轨迹。
 精度政策：P_SUM_V1=2.388818359375e-05 MW（两侧和总量分别验收）；QP_RESIDUAL_V1=9.794873805516215e-06 Mvar；ALPHA_READ_V1=1e-7；PROP_ALPHA_V1=2e-7；FIXED_EXACT_V1=0；VOLTAGE_EDGE_ZERO_V1=0 pu。不重复叠加存储预算；求解残差检查不放宽物理端点。
 
-## T4
+## Case 4: Load redistribution under a voltage-change limit
+
+Archived identifier: `T4`.
 
 T4：改变统计集合，在0.50 MW转移时限制Shuf115电压扰动，供受控分布变化测试。
 这是固定模型中的受控研究任务，集合为登记设备清单，不称实际地理区域。参考状态为NJ_BASELINE_V1。
@@ -78,7 +86,9 @@ V4（Seli230）∈[1.0133168288134877,1.0233168288134875] pu；baseline及every_
 C7：其他输入、拓扑、共享类型、控制设置及潮流配置不变。保留原平衡及调压机制；配置不变不要求机组连续P/Q不变。不修复已有越限，不宣称全网健康。试算不自动成为接受状态，不解释成动态轨迹。
 精度政策：P_SUM_V1=2.388818359375e-05 MW（两侧和总量分别验收）；QP_RESIDUAL_V1=9.794873805516215e-06 Mvar；ALPHA_READ_V1=1e-7；PROP_ALPHA_V1=2e-7；FIXED_EXACT_V1=0；VOLTAGE_EDGE_ZERO_V1=0 pu。不重复叠加存储预算；求解残差检查不放宽物理端点。
 
-## V1
+## Case 5: Voltage reduction with two independent load-growth groups
+
+Archived identifier: `V1`.
 
 V1：构造101 Wythe电压降低0.001至0.0015 pu的稳态测试状态，用于比较电压敏感算法输入。
 这是固定模型中的受控研究任务，集合为登记设备清单，不称实际地理区域。参考状态为CG_BASELINE_V1。
@@ -98,7 +108,9 @@ V6（105 Roanoke）∈[0.9600000003123973,0.9700000003123973] pu；baseline及ev
 C7：其他输入、拓扑、共享类型、控制设置及潮流配置不变。保留原平衡及调压机制；配置不变不要求机组连续P/Q不变。不修复已有越限，不宣称全网健康。试算不自动成为接受状态，不解释成动态轨迹。
 精度政策：P_SUM_V1=1.3636184692382813e-05 MW（两侧和总量分别验收）；QP_RESIDUAL_V1=3.3364502601314728e-06 Mvar；ALPHA_READ_V1=1e-7；PROP_ALPHA_V1=2e-7；FIXED_EXACT_V1=0；VOLTAGE_EDGE_ZERO_V1=0 pu。不重复叠加存储预算；求解残差检查不放宽物理端点。
 
-## V2
+## Case 6: Voltage reduction with one load-growth group
+
+Archived identifier: `V2`.
 
 V2：固定L1/L4/L6，检验不同增长组能否形成101电压目标；无不存在的第二增长组。
 这是固定模型中的受控研究任务，集合为登记设备清单，不称实际地理区域。参考状态为CG_BASELINE_V1。
@@ -118,7 +130,9 @@ V6（105 Roanoke）∈[0.9600000003123973,0.9700000003123973] pu；baseline及ev
 C7：其他输入、拓扑、共享类型、控制设置及潮流配置不变。保留原平衡及调压机制；配置不变不要求机组连续P/Q不变。不修复已有越限，不宣称全网健康。试算不自动成为接受状态，不解释成动态轨迹。
 精度政策：P_SUM_V1=1.3636184692382813e-05 MW（两侧和总量分别验收）；QP_RESIDUAL_V1=3.3364502601314728e-06 Mvar；ALPHA_READ_V1=1e-7；PROP_ALPHA_V1=2e-7；FIXED_EXACT_V1=0；VOLTAGE_EDGE_ZERO_V1=0 pu。不重复叠加存储预算；求解残差检查不放宽物理端点。
 
-## V3
+## Case 7: Voltage reduction with a second-bus constraint
+
+Archived identifier: `V3`.
 
 V3：形成Shuf115小幅降压试验状态，并限制Jinx230变化，用于跨电网电压目标及保留组合测试。
 这是固定模型中的受控研究任务，集合为登记设备清单，不称实际地理区域。参考状态为NJ_BASELINE_V1。
@@ -136,7 +150,9 @@ V4（Seli230）∈[1.0133168288134877,1.0233168288134875] pu；baseline及every_
 C7：其他输入、拓扑、共享类型、控制设置及潮流配置不变。保留原平衡及调压机制；配置不变不要求机组连续P/Q不变。不修复已有越限，不宣称全网健康。试算不自动成为接受状态，不解释成动态轨迹。
 精度政策：P_SUM_V1=2.388818359375e-05 MW（两侧和总量分别验收）；QP_RESIDUAL_V1=9.794873805516215e-06 Mvar；ALPHA_READ_V1=1e-7；PROP_ALPHA_V1=2e-7；FIXED_EXACT_V1=0；VOLTAGE_EDGE_ZERO_V1=0 pu。不重复叠加存储预算；求解残差检查不放宽物理端点。
 
-## V4
+## Case 8: Voltage reduction with one fixed load
+
+Archived identifier: `V4`.
 
 V4：固定Aoy输入，令Jinx与Seli同倍率增长，Shuf独立增长，以构造Jinx电压目标。
 这是固定模型中的受控研究任务，集合为登记设备清单，不称实际地理区域。参考状态为NJ_BASELINE_V1。
@@ -154,7 +170,9 @@ V4（Seli230）∈[1.0133168288134877,1.0233168288134875] pu；baseline及every_
 C7：其他输入、拓扑、共享类型、控制设置及潮流配置不变。保留原平衡及调压机制；配置不变不要求机组连续P/Q不变。不修复已有越限，不宣称全网健康。试算不自动成为接受状态，不解释成动态轨迹。
 精度政策：P_SUM_V1=2.388818359375e-05 MW（两侧和总量分别验收）；QP_RESIDUAL_V1=9.794873805516215e-06 Mvar；ALPHA_READ_V1=1e-7；PROP_ALPHA_V1=2e-7；FIXED_EXACT_V1=0；VOLTAGE_EDGE_ZERO_V1=0 pu。不重复叠加存储预算；求解残差检查不放宽物理端点。
 
-## L1
+## Case 9: Line-loading increase at fixed total load input
+
+Archived identifier: `L1`.
 
 L1：在总输入保持下提高Yonga—Jinx输送水平，为线路观测和联合约束算法提供稳态测试输入。
 这是固定模型中的受控研究任务，集合为登记设备清单，不称实际地理区域。参考状态为NJ_LINE_BASELINE_V1。
@@ -172,7 +190,9 @@ V4（Seli230）∈[1.0133168288134877,1.0233168288134875] pu；baseline及every_
 C7：其他输入、拓扑、共享类型、控制设置及潮流配置不变。保留原平衡及调压机制；配置不变不要求机组连续P/Q不变。不修复已有越限，不宣称全网健康。试算不自动成为接受状态，不解释成动态轨迹。
 精度政策：P_SUM_V1=2.388818359375e-05 MW（两侧和总量分别验收）；QP_RESIDUAL_V1=9.794873805516215e-06 Mvar；ALPHA_READ_V1=1e-7；PROP_ALPHA_V1=2e-7；FIXED_EXACT_V1=0；VOLTAGE_EDGE_ZERO_V1=0 pu；LINE_LOADING_EDGE_ZERO_V1=0个百分点。不重复叠加存储预算；求解残差检查不放宽物理端点。
 
-## L2
+## Case 10: Line-loading increase with one fixed load
+
+Archived identifier: `L2`.
 
 L2：保持Shuf输入，检查其他负荷协调实现相同线路目标。
 这是固定模型中的受控研究任务，集合为登记设备清单，不称实际地理区域。参考状态为NJ_LINE_BASELINE_V1。
@@ -190,7 +210,9 @@ V4（Seli230）∈[1.0133168288134877,1.0233168288134875] pu；baseline及every_
 C7：其他输入、拓扑、共享类型、控制设置及潮流配置不变。保留原平衡及调压机制；配置不变不要求机组连续P/Q不变。不修复已有越限，不宣称全网健康。试算不自动成为接受状态，不解释成动态轨迹。
 精度政策：P_SUM_V1=2.388818359375e-05 MW（两侧和总量分别验收）；QP_RESIDUAL_V1=9.794873805516215e-06 Mvar；ALPHA_READ_V1=1e-7；PROP_ALPHA_V1=2e-7；FIXED_EXACT_V1=0；VOLTAGE_EDGE_ZERO_V1=0 pu；LINE_LOADING_EDGE_ZERO_V1=0个百分点。不重复叠加存储预算；求解残差检查不放宽物理端点。
 
-## L3
+## Case 11: Line-loading increase under a voltage-change limit
+
+Archived identifier: `L3`.
 
 L3：线路目标联立Shuf电压保持，用于检验有约束作用的组合构造。
 这是固定模型中的受控研究任务，集合为登记设备清单，不称实际地理区域。参考状态为NJ_LINE_BASELINE_V1。
@@ -208,7 +230,9 @@ V4（Seli230）∈[1.0133168288134877,1.0233168288134875] pu；baseline及every_
 C7：其他输入、拓扑、共享类型、控制设置及潮流配置不变。保留原平衡及调压机制；配置不变不要求机组连续P/Q不变。不修复已有越限，不宣称全网健康。试算不自动成为接受状态，不解释成动态轨迹。
 精度政策：P_SUM_V1=2.388818359375e-05 MW（两侧和总量分别验收）；QP_RESIDUAL_V1=9.794873805516215e-06 Mvar；ALPHA_READ_V1=1e-7；PROP_ALPHA_V1=2e-7；FIXED_EXACT_V1=0；VOLTAGE_EDGE_ZERO_V1=0 pu；LINE_LOADING_EDGE_ZERO_V1=0个百分点。不重复叠加存储预算；求解残差检查不放宽物理端点。
 
-## L4
+## Case 12: Line-loading increase with a second-line constraint
+
+Archived identifier: `L4`.
 
 L4：在提高Yonga—Jinx输送的同时限制Jinl—Seli负载率变化，构造线路间保留工况。
 这是固定模型中的受控研究任务，集合为登记设备清单，不称实际地理区域。参考状态为NJ_LINE_BASELINE_V1。
@@ -226,3 +250,4 @@ E2（Jinl-Seli）的c:loading∈[6.677618306764409,6.67961830676441] %，baselin
 所有绝对端点为主验收表示；相对变化由同一端点减同一基准推导，不另行舍入。最终目标不要求baseline已满足。
 C7：其他输入、拓扑、共享类型、控制设置及潮流配置不变。保留原平衡及调压机制；配置不变不要求机组连续P/Q不变。不修复已有越限，不宣称全网健康。试算不自动成为接受状态，不解释成动态轨迹。
 精度政策：P_SUM_V1=2.388818359375e-05 MW（两侧和总量分别验收）；QP_RESIDUAL_V1=9.794873805516215e-06 Mvar；ALPHA_READ_V1=1e-7；PROP_ALPHA_V1=2e-7；FIXED_EXACT_V1=0；VOLTAGE_EDGE_ZERO_V1=0 pu；LINE_LOADING_EDGE_ZERO_V1=0个百分点。不重复叠加存储预算；求解残差检查不放宽物理端点。
+

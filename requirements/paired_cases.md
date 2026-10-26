@@ -1,8 +1,10 @@
 # Additional operating requirements
 
-Recorded Chinese requirements for the six paired cases. Each request was supplied to both B and P.
+The following Chinese texts are the original requirements for Cases 13–18. Each request was supplied to both the basic-constraint (B) and linked-requirement (P) schemes. Case numbers follow the paper, and archived identifiers are given below each title for locating the corresponding records.
 
-## N-T1
+## Case 13: Load redistribution with a fixed member in the reduction group
+
+Archived identifier: `N-T1`.
 
 用途：在总负荷输入不变时改变交错设备集合的空间负荷分布，用于稳态潮流对比。固定转出集合内L4，避免其输入变化混入比较。
 研究者定义的集合负荷转移需求 N-T1。
@@ -15,7 +17,9 @@ C6：{V1=100 Glen Lyn,V2=101 Wythe,V3=102 Smythe,V4=103 Claytor,V5=104 Hancock,V
 C7：其他负荷输入、拓扑、共享设备类型、控制及潮流配置保持不变；沿用登记的有限参考机组边界检查，不附加全网健康要求。基准不必满足仅最终目标；不合格试算不是接受状态，不要求虚构连续路径。
 精度采用precision-policy-v1：有功转移/输入和误差≤1.3636184692382813e-05 MW；各自Q/P残差≤3.3364502601314728e-06 Mvar；倍率读回误差≤1e-07；组内同倍率读回误差≤2e-07；固定P/Q精确恢复，误差0；电压以所列端点验收，附加放宽量0 pu。存储预算已包含在上述精度中，不再叠加。
 
-## N-T2
+## Case 14: Reverse group redistribution with one fixed load
+
+Archived identifier: `N-T2`.
 
 用途：构造相反集合方向的负荷重分配测试状态，比较相同输入总量下的位置效应。固定转出统计成员L3，其余设备自由协调；不称线路潮流反转。
 研究者定义的集合负荷转移需求 N-T2。
@@ -28,7 +32,9 @@ C6：{V1=100 Glen Lyn,V2=101 Wythe,V3=102 Smythe,V4=103 Claytor,V5=104 Hancock,V
 C7：其他负荷输入、拓扑、共享设备类型、控制及潮流配置保持不变；沿用登记的有限参考机组边界检查，不附加全网健康要求。基准不必满足仅最终目标；不合格试算不是接受状态，不要求虚构连续路径。
 精度采用precision-policy-v1：有功转移/输入和误差≤1.3636184692382813e-05 MW；各自Q/P残差≤3.3364502601314728e-06 Mvar；倍率读回误差≤1e-07；组内同倍率读回误差≤2e-07；固定P/Q精确恢复，误差0；电压以所列端点验收，附加放宽量0 pu。存储预算已包含在上述精度中，不再叠加。
 
-## N-T3
+## Case 15: Load redistribution with a fixed member in the receiving group
+
+Archived identifier: `N-T3`.
 
 用途：在新的交错统计集合间转移负荷，检验接收集合含固定成员时的工况组织。保持L6输入及全部观察电压，以限制与转移无关的变化。
 研究者定义的集合负荷转移需求 N-T3。
@@ -41,7 +47,9 @@ C6：{V1=100 Glen Lyn,V2=101 Wythe,V3=102 Smythe,V4=103 Claytor,V5=104 Hancock,V
 C7：其他负荷输入、拓扑、共享设备类型、控制及潮流配置保持不变；沿用登记的有限参考机组边界检查，不附加全网健康要求。基准不必满足仅最终目标；不合格试算不是接受状态，不要求虚构连续路径。
 精度采用precision-policy-v1：有功转移/输入和误差≤1.3636184692382813e-05 MW；各自Q/P残差≤3.3364502601314728e-06 Mvar；倍率读回误差≤1e-07；组内同倍率读回误差≤2e-07；固定P/Q精确恢复，误差0；电压以所列端点验收，附加放宽量0 pu。存储预算已包含在上述精度中，不再叠加。
 
-## N-V1
+## Case 16: Voltage reduction at bus 101 with bus 102 constrained
+
+Archived identifier: `N-V1`.
 
 用途：构造101 Wythe电压降低的稳态测试状态，供电压观测算法比较。增长组改变为L2/L5及独立L4，保持102电压偏移不超过0.002 pu并固定其余输入。
 研究者定义的负荷增长需求 N-V1。
@@ -53,7 +61,9 @@ C5：V3（102 Smythe）在基准及每个接受状态（含最终）的电压相
 C7：其他负荷输入、拓扑、共享设备类型、控制及潮流配置保持不变；沿用登记的有限参考机组边界检查，不附加全网健康要求。基准不必满足仅最终目标；不合格试算不是接受状态，不要求虚构连续路径。
 精度采用precision-policy-v1：有功转移/输入和误差≤1.3636184692382813e-05 MW；各自Q/P残差≤3.3364502601314728e-06 Mvar；倍率读回误差≤1e-07；组内同倍率读回误差≤2e-07；固定P/Q精确恢复，误差0；电压以所列端点验收，附加放宽量0 pu。存储预算已包含在上述精度中，不再叠加。
 
-## N-V2
+## Case 17: Voltage reduction at bus 102 with bus 101 constrained
+
+Archived identifier: `N-V2`.
 
 用途：在L2固定时，以另一增长组合构造102 Smythe的非零降压状态。保留101电压变化不超过0.001 pu，用于区别目标母线和非目标观测量；不是稳定极限测试。
 研究者定义的负荷增长需求 N-V2。
@@ -65,7 +75,9 @@ C5：V2（101 Wythe）在基准及每个接受状态（含最终）的电压相�
 C7：其他负荷输入、拓扑、共享设备类型、控制及潮流配置保持不变；沿用登记的有限参考机组边界检查，不附加全网健康要求。基准不必满足仅最终目标；不合格试算不是接受状态，不要求虚构连续路径。
 精度采用precision-policy-v1：有功转移/输入和误差≤1.3636184692382813e-05 MW；各自Q/P残差≤3.3364502601314728e-06 Mvar；倍率读回误差≤1e-07；组内同倍率读回误差≤2e-07；固定P/Q精确恢复，误差0；电压以所列端点验收，附加放宽量0 pu。存储预算已包含在上述精度中，不再叠加。
 
-## N-V3
+## Case 18: Voltage reduction at bus 101 with an alternative load grouping
+
+Archived identifier: `N-V3`.
 
 用途：通过L2/L6同倍率及L1独立增长，构造101电压目标。固定L3/L4/L5并限制102偏移，以保持可比的非目标状态。
 研究者定义的负荷增长需求 N-V3。
@@ -76,3 +88,4 @@ C4：V2（101 Wythe）最终电压相对B_BASELINE_V1的变化在[-0.0014, -0.00
 C5：V3（102 Smythe）在基准及每个接受状态（含最终）的电压相对基准变化在[-0.0012, 0.0012] pu内。
 C7：其他负荷输入、拓扑、共享设备类型、控制及潮流配置保持不变；沿用登记的有限参考机组边界检查，不附加全网健康要求。基准不必满足仅最终目标；不合格试算不是接受状态，不要求虚构连续路径。
 精度采用precision-policy-v1：有功转移/输入和误差≤1.3636184692382813e-05 MW；各自Q/P残差≤3.3364502601314728e-06 Mvar；倍率读回误差≤1e-07；组内同倍率读回误差≤2e-07；固定P/Q精确恢复，误差0；电压以所列端点验收，附加放宽量0 pu。存储预算已包含在上述精度中，不再叠加。
+
