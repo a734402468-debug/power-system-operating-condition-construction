@@ -14,4 +14,5 @@ The B and P input files contain the requirements, instructions, and syntax examp
 
 `S-V_response.json` applies proportional load growth at every accepted state, although it was requested only at the final state. This change in the scope of the requirement leads to rejection before numerical adjustment or power-flow calculation. The requested final targets were a 2 MW increase in the sum of per-machine generator settings and a target-bus voltage reduction of 0.00015–0.00020 p.u.
 
-Recorded outputs retain their original identifiers and wording. The syntax examples in the Case 14 input files are part of the experimental inputs, rather than additional case results.
+The JSON responses and request excerpts are unchanged and retain their original identifiers and wording. The [equipment-label table](../experimental_setup.md#equipment-labels) links those original names to the labels used in the paper and reported results. The syntax examples in the Case 14 input files are part of the experimental inputs, rather than additional case results.
+

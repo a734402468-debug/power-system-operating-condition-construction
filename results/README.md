@@ -1,5 +1,7 @@
 # Results and evaluation
 
+The [experimental setup](../experimental_setup.md) describes the current environment, model settings, and equipment labels. These CSV files are reported result tables; their display names follow the paper, while archived case and object identifiers are retained for cross-referencing.
+
 | Files | Content |
 |---|---|
 | `model_comparison.csv` | Twelve main cases for each of the four API model configurations |
@@ -34,3 +36,4 @@ The paired token comparison uses the five requests for which both expressions pa
 ## Electrical quantities
 
 In `generation_load_values.csv`, generator setting values are per machine, whereas actual generator outputs are aggregate values. Column units distinguish MW, Mvar, p.u., loading percentages, and changes in percentage points.
+

@@ -1,29 +1,30 @@
 network,field,value,unit
-CG,errlf,1.0,kVA
-CG,erreq,0.10000000149011612,%
-CG,itrlx,25,
-CG,ictrlx,20,
-CG,iopt_net,0,
-CG,iopt_lim,0,
-CG,iopt_plim,0,
-CG,iopt_at,0,
-CG,iopt_asht,0,
-CG,iopt_pq,0,
-CG,iopt_fls,0,
-CG,iopt_apdist,0,
-CG,iPbalancing,0,
-CG,scLoadFac,100.0,%
-NJ,errlf,1.0,kVA
-NJ,erreq,0.10000000149011612,%
-NJ,itrlx,25,
-NJ,ictrlx,20,
-NJ,iopt_net,0,
-NJ,iopt_lim,0,
-NJ,iopt_plim,0,
-NJ,iopt_at,0,
-NJ,iopt_asht,0,
-NJ,iopt_pq,0,
-NJ,iopt_fls,0,
-NJ,iopt_apdist,0,
-NJ,iPbalancing,0,
-NJ,scLoadFac,100.0,%
+IEEE 118-bus,errlf,1.0,kVA
+IEEE 118-bus,erreq,0.10000000149011612,%
+IEEE 118-bus,itrlx,25,
+IEEE 118-bus,ictrlx,20,
+IEEE 118-bus,iopt_net,0,
+IEEE 118-bus,iopt_lim,0,
+IEEE 118-bus,iopt_plim,0,
+IEEE 118-bus,iopt_at,0,
+IEEE 118-bus,iopt_asht,0,
+IEEE 118-bus,iopt_pq,0,
+IEEE 118-bus,iopt_fls,0,
+IEEE 118-bus,iopt_apdist,0,
+IEEE 118-bus,iPbalancing,0,
+IEEE 118-bus,scLoadFac,100.0,%
+Regional system,errlf,1.0,kVA
+Regional system,erreq,0.10000000149011612,%
+Regional system,itrlx,25,
+Regional system,ictrlx,20,
+Regional system,iopt_net,0,
+Regional system,iopt_lim,0,
+Regional system,iopt_plim,0,
+Regional system,iopt_at,0,
+Regional system,iopt_asht,0,
+Regional system,iopt_pq,0,
+Regional system,iopt_fls,0,
+Regional system,iopt_apdist,0,
+Regional system,iPbalancing,0,
+Regional system,scLoadFac,100.0,%
+
