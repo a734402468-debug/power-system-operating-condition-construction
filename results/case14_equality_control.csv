@@ -1,0 +1,3 @@
+condition,solver_branch,squared_multiplier_change,objective_change_percent,alpha_2,alpha_5,command_factor_difference,original_requirements_AC,AC_result_source
+Linked problem,exact_centers,2.622984370502867e-05,0.0,0.9974420643981523,0.9957339698654671,0.001708094532685167,passed,matching historical result
+Linked problem with alpha_2 = alpha_5,exact_centers,2.7780036696505076e-05,5.910035183241313,0.9963742421038203,0.9963742421038203,0.0,passed,new calculation

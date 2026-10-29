@@ -11,6 +11,7 @@ The counts below refer to the reported study blocks. AC calculations include ref
 | Generation–load cases (Cases 19–21) | 30,520 | 3 | 2 | 6 |
 | Paired formulation cases (Cases 13–18) | 87,215 | 11 | 6 | 18 |
 | Numerical-precision check | 0 | 0 | 25 | 60 |
+| Case 14 equal-factor comparison | 0 | 2 | 1 | 3 |
 
 The main DeepSeek cases use 13 generation requests, including specification revision. The additional allocation comparison uses two new generation requests; its four new candidate verifications include two proportional-allocation results. First-level observations shared with the main cases are reused.
 
@@ -23,6 +24,8 @@ The generation–load block records four formal generation requests. A separate 
 The paired formulation block contains twelve completed requests, with 69,420 input and 17,795 output tokens. One preceding request returned no answer; its usage is unknown. Six reference adjustment calculations prepared the tasks before generation and are separate from the eleven calculations driven by accepted responses. The eleven accepted specifications use six new candidate verifications and five paired reuses.
 
 The numerical-precision check recalculates five fixed candidates in 25 trials. Its 60 AC calculations comprise 25 candidate calculations, 25 corresponding reference calculations, five initial reference checks, and five restoration checks. It uses no new generation or optimization.
+
+The Case 14 comparison uses two adjustment calculations and no new model generation. Condition A reproduces the historical Linked candidate and reuses its matching AC result. Condition B adds one independent candidate verification; its three AC calculations comprise the reference, candidate, and restoration calculations. These counts are additional to the original paired formulation block.
 
 ## Sensitivity preparation
 

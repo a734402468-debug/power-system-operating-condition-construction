@@ -71,6 +71,9 @@ Each task starts independently. The prompt requests a JSON specification, withou
 
 ## Case schedule and evaluation
 
+The researchers prepare a task-specific checking specification during task design, recording equipment, adjustable variables, input relationships, bounds, tolerances, and applicable states. Generated specifications are compared with this reference before numerical solution. Candidate settings are calculated from the accepted generated constraints.
+
+
 Cases 1–12 form the main comparison. Cases 2, 7, and 11 each have three runs per model, including the main run. These cases allow at most one specification revision using the prescribed diagnostic feedback and one AC trial for an accepted specification.
 
 Cases 13–18 compare basic constraints (B) and linked requirements (P), using one independent DeepSeek response per expression with the respective instructions and examples. These paired cases allow neither specification revision nor numerical correction. Cases 19–21 extend the adjustments to generation and load, allowing one format or adjustment-permission revision where applicable. Case 19 also permits one numerical correction after the first AC trial.

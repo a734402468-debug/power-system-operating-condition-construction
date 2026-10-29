@@ -9,6 +9,7 @@ The [experimental setup](../experimental_setup.md) describes the calculation env
 | `load_adjustments.csv`, `bus_voltages.csv`, `line_loading.csv` | Numerical and AC results for the main examples and load-allocation comparison |
 | `paired_requirements.csv`, `paired_tokens.csv` | Outcomes and token usage for the six additional B/P pairs (Cases 13–18) |
 | `paired_load_adjustments.csv`, `paired_voltages.csv`, `paired_electrical_checks.csv` | Load settings, voltages, and requirement checks for the eleven accepted specifications |
+| [`case14_equality_control.md`](case14_equality_control.md), `case14_equality_control.csv`, `case14_load_adjustments.csv`, `case14_voltages.csv` | Controlled addition of an equal-factor constraint to the accepted Case 14 problem |
 | `generation_load_results.csv`, `generation_load_values.csv` | Generation–load outcomes and electrical values, including the initial and corrected results for Case 19 (S-T) |
 | `L4_boundary.csv` | The line-loading boundary failure in Case 12 (L4) |
 | `power_flow_settings.csv` | Recorded simulator options used for sensitivity preparation and power-flow verification |
