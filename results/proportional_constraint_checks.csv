@@ -1,0 +1,14 @@
+test,passed
+three_member_old_allows_new_rejects,True
+strict_proportional_allowed,True
+interior_spread_allowed,True
+three_pairs_six_inequalities,True
+priority_centers_unchanged,True
+two_member_identical_halfspaces,True
+unequal_scales_reject_counterexample,True
+unequal_scales_allow_interior_and_equal,True
+existing_final_acceptance_rejects_counterexample,True
+exact_priority_branch,True
+non_group_problem_fields_unchanged,True
+non_group_inequalities_unchanged,True
+only_build_problem_function_changed,True

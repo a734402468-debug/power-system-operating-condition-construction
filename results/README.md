@@ -14,6 +14,7 @@ The [experimental setup](../experimental_setup.md) describes the calculation env
 | `L4_boundary.csv` | The line-loading boundary failure in Case 12 (L4) |
 | `power_flow_settings.csv` | Recorded simulator options used for sensitivity preparation and power-flow verification |
 | [`numerical_precision.csv`](numerical_precision.csv), [`numerical_precision.md`](numerical_precision.md) | Fixed-candidate results at 1, 0.1, and 0.01 kVA nodal tolerances |
+| [`proportional_constraints.md`](proportional_constraints.md) | Mixed proportional-group assembly and recorded offline checks |
 | [`computational_costs.md`](computational_costs.md) | Generation usage and numerical calculation counts |
 
 ## Table notation

@@ -27,6 +27,8 @@ The numerical-precision check recalculates five fixed candidates in 25 trials. I
 
 The Case 14 comparison uses two adjustment calculations and no new model generation. Condition A reproduces the historical Linked candidate and reuses its matching AC result. Condition B adds one independent candidate verification; its three AC calculations comprise the reference, candidate, and restoration calculations. These counts are additional to the original paired formulation block.
 
+The subsequent proportional-constraint correction used one synthetic numerical solve and 13 offline checks, with no LLM calls, AC calculations, or historical-candidate recalculations. It is separate from the case-study totals.
+
 ## Sensitivity preparation
 
 The IEEE 118-bus response preparation records eleven AC calculations. Regional-system load responses use a six-calculation session: one reference, four separate load perturbations, and one restoration. Voltage and line-loading sensitivities come from the same perturbations. These preparation calculations are separate from the study blocks above.

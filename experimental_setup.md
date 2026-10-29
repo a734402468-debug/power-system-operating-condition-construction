@@ -42,6 +42,8 @@ The original node-equation convergence tolerance is 1 kVA; the model-equation to
 
 Fixed inputs are checked against their exact reference values. Voltage and line-loading bounds have no additional endpoint allowance. Each transfer side and the retained total are checked separately. The input-storage allowances are already included in these tolerances, and results are checked before presentation rounding.
 
+The archived mixed-adjustment solver used factor differences from one group member, with full-group spread checked at acceptance. Pairwise bounds were implemented and checked offline after the reported runs. The [constraint note](results/proportional_constraints.md) gives the formulation and verification record; the historical case results are unchanged.
+
 ## Equipment labels
 
 The following correspondence applies to the regional system. Load and bus identifiers are local to each test system. IEEE 118-bus numbers and names retain their conventional form.

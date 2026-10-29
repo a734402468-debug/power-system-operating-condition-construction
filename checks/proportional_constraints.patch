@@ -1,0 +1,20 @@
+--- a/src/powercaselab/source_load_constraints_v1.py
++++ b/src/powercaselab/source_load_constraints_v1.py
+@@ -222,7 +222,16 @@
+             for p in ps:row(dict(c,id=c['id']+p),{p:scales[p]},0.,tol,True)
+         elif typ=='generator_delta_sum':row(c,{p:scales[p] for p in ps},v['value'],tol,True)
+         elif typ=='proportional_change':
+-            for p in ps[1:]:row(dict(c,id=c['id']+p),{p:scales[p],ps[0]:-scales[ps[0]]},0.,tol,True)
++            # Full-group spread tolerance: every pair, in physical alpha units.
++            for i,p in enumerate(ps):
++                for q in ps[i+1:]:
++                    row(dict(c,id=c['id']+' pair '+p+' / '+q),
++                        {p:scales[p],q:-scales[q]},0.,tol)
++            # Retain only the original independent anchor centers for priority.
++            for p in ps[1:]:
++                coeff={p:scales[p],ps[0]:-scales[ps[0]]}
++                centers.append(dict(id=c['id']+p+' center',
++                                    a=[coeff.get(q,0.) for q in paths],b=0.))
+         elif typ in ('alpha_bounds','generator_delta_bounds'):
+             for p in ps:
+                 origin=1. if typ=='alpha_bounds' else 0.
