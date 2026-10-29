@@ -1,6 +1,6 @@
 # N-T2: basic expression input
 
-Extract from the recorded input. Record-identification fields are omitted and JSON is indented for readability; electrical requirements, supplied numerical values, instructions, and syntax examples are retained. The two forms use different instructions and examples, as discussed in Supplementary Section S4.
+Extract from the recorded input. Record-identification fields are omitted and JSON is indented for readability; electrical requirements, supplied numerical values, instructions, and syntax examples are retained. The two forms use different instructions and examples, as described in the [paired comparison](../results/README.md#requirement-checks).
 
 ## System message
 
