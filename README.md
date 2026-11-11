@@ -1,4 +1,4 @@
-# Constraint-guided construction of operating points for power-system simulation
+# Constructing feasible operating points for power system simulation: Preserving study requirements in LLM-assisted constraint formulation
 
 Supporting materials for the paper.
 

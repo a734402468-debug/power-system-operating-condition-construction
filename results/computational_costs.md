@@ -6,7 +6,7 @@ The counts below refer to the reported study blocks. AC calculations include ref
 |---|---:|---:|---:|---:|
 | Main DeepSeek cases (Cases 1–12) | 95,206 | 9 | 9 | 27 |
 | Additional load-allocation comparisons | 18,538 | 2 | 4 | 12 |
-| Additional Qwen configurations and API repeat runs | 395,864 | 21 | 1 | 3 |
+| Additional Qwen configurations and API repeat runs | 395,698 | 21 | 1 | 3 |
 | GPT configuration: main cases and repeats | 284,355 | 18 | 2 | 6 |
 | Generation–load cases (Cases 19–21) | 30,520 | 3 | 2 | 6 |
 | Paired formulation cases (Cases 13–18) | 87,215 | 11 | 6 | 18 |
@@ -15,7 +15,7 @@ The counts below refer to the reported study blocks. AC calculations include ref
 
 The main DeepSeek cases use 13 generation requests, including specification revision. The additional allocation comparison uses two new generation requests; its four new candidate verifications include two proportional-allocation results. First-level observations shared with the main cases are reused.
 
-The additional Qwen and repeat-run block records 51 formal requests and two compatibility probes. Two requests have unknown token usage, so the table gives the known total. This block excludes the original DeepSeek main cases.
+The additional Qwen and repeat-run block records 51 formal requests and two compatibility probes. The table sums the reported usage for the Qwen main runs in `model_comparison.csv` and runs 2 and 3 of DeepSeek and both Qwen configurations in `repeated_runs.csv`: 317,212 input tokens and 78,486 output tokens, or 395,698 in total. Two formal-run records have unknown usage. The original DeepSeek main runs and duplicate run-1 entries are excluded. The earlier study-block summary reported 395,864 tokens, 166 more than the formal-run rows; the available records do not identify which calls account for that difference. Probe usage is not separately itemized, so it is not inferred from the difference.
 
 The GPT block contains eighteen runs: twelve main runs and six additional repeats. Its formal usage comprises 264,924 input tokens and 19,431 output tokens, including 1,516 reasoning tokens. Two separate compatibility probes use 36,737 tokens and are excluded from the table. Sixteen candidate results reuse matching historical observations; two require new AC verification.
 

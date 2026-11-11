@@ -8,7 +8,7 @@ These selected model outputs show how the requested electrical conditions were e
 
 ## Case 14: Reverse group redistribution with one fixed load (N-T2)
 
-The B and P input files contain the requirements, instructions, and syntax examples supplied to the two expression schemes, with record-identification fields omitted. The response files preserve the generated answers. B adds an equal-factor condition for L2 and L5 despite the requested free allocation, so it is rejected before numerical solution. P passes the checks. The failure of B concerns the added requirement; physical feasibility under that additional condition was not tested.
+The B and P input files contain the requirements, instructions, and syntax examples supplied to the two expression schemes, with record-identification fields omitted. The response files preserve the generated answers. B adds an equal-factor condition for L2 and L5 despite the requested free allocation, so it is rejected before numerical solution. P passes the checks. A subsequent [controlled comparison](../results/case14_equality_control.md) solved the accepted linked problem with and without the added equality. Both settings met the original electrical requirements; the equality changed the allocation and increased the sum of squared relative load changes by 5.91%.
 
 ## Case 20: Generation adjustment and load growth for a voltage target (S-V)
 

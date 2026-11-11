@@ -2,7 +2,7 @@
 
 For a load group, the required multiplier spread is max(αᵢ) − min(αᵢ) ≤ ε. With xᵢ = (αᵢ − 1)/sᵢ, the equivalent linear constraints are −ε ≤ sᵢxᵢ − sⱼxⱼ ≤ ε for every pair i < j. The tolerance remains in multiplier units.
 
-The mixed-adjustment implementation now assembles these pairwise bounds. Its exact-relation priority retains the original independent equations linking each member to the first member. The objective, bounds, final acceptance function, and other constraint types are unchanged. See the [implementation patch](../checks/proportional_constraints.patch).
+The mixed-adjustment implementation now assembles these pairwise bounds. Its exact-relation priority retains the original independent equations linking each member to the first member. The objective, bounds, final acceptance function, and other constraint types are unchanged.
 
 The archived implementation bounded each multiplier's difference from the first member. For three or more members, this can permit a full-group spread above ε in the tolerance fallback. Final acceptance already used the full-group condition. The correction was made after the reported experiments; archived code, results, and scores are retained. In the reported mixed-adjustment cases, Case 19 uses free load allocation, Case 21 fixes the loads, and Case 20 stops before numerical solution.
 

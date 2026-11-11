@@ -7,13 +7,12 @@ The [experimental setup](../experimental_setup.md) describes the calculation env
 | `model_comparison.csv` | Twelve main cases for each of the four API model configurations |
 | `repeated_runs.csv` | Three runs each for Cases 2, 7, and 11 (archived as T2, V3, and L3); run 1 is included in the main results |
 | `load_adjustments.csv`, `bus_voltages.csv`, `line_loading.csv` | Numerical and AC results for the main examples and load-allocation comparison |
-| `paired_requirements.csv`, `paired_tokens.csv` | Outcomes and token usage for the six additional B/P pairs (Cases 13–18) |
+| `paired_requirements.csv` | Outcomes and per-response token usage for the six additional B/P pairs (Cases 13–18) |
 | `paired_load_adjustments.csv`, `paired_voltages.csv`, `paired_electrical_checks.csv` | Load settings, voltages, and requirement checks for the eleven accepted specifications |
 | [`case14_equality_control.md`](case14_equality_control.md), `case14_equality_control.csv`, `case14_load_adjustments.csv`, `case14_voltages.csv` | Controlled addition of an equal-factor constraint to the accepted Case 14 problem |
 | `generation_load_results.csv`, `generation_load_values.csv` | Generation–load outcomes and electrical values, including the initial and corrected results for Case 19 (S-T) |
-| `L4_boundary.csv` | The line-loading boundary failure in Case 12 (L4) |
 | `power_flow_settings.csv` | Recorded simulator options used for sensitivity preparation and power-flow verification |
-| [`numerical_precision.csv`](numerical_precision.csv), [`numerical_precision.md`](numerical_precision.md) | Fixed-candidate results at 1, 0.1, and 0.01 kVA nodal tolerances |
+| [`numerical_precision.csv`](numerical_precision.csv), [`numerical_precision.md`](numerical_precision.md) | Fixed-candidate results at 1, 0.1, and 0.01 kVA nodal tolerances, including the original Case 12 boundary failure |
 | [`proportional_constraints.md`](proportional_constraints.md) | Mixed proportional-group assembly and recorded offline checks |
 | [`computational_costs.md`](computational_costs.md) | Generation usage and numerical calculation counts |
 
@@ -35,7 +34,7 @@ In the paired results, `shared=True` identifies reuse of the other expression's 
 
 The eighteen GPT-6.1-SOL runs used two new independent physical observations and sixteen historical observations. Repeated model generations and shared observations are counted separately from independent power-flow calculations.
 
-The paired token comparison uses the five requests for which both expressions passed the requirement check; Case 14 (N-T2) is excluded. Reductions are calculated from summed token counts. Input and output tokens are service-reported usage, rather than measurements of monetary cost or human effort.
+The paired token comparison uses the five requests for which both expressions passed the requirement check; Case 14 (N-T2) is excluded. In `paired_requirements.csv`, select tasks for which both B and P have `semantic=certified`, then sum their token counts separately. The output totals are 9,864 for B and 4,290 for P; input plus output totals are 39,402 and 30,245. These give reductions of 56.51% and 23.24%, respectively. Input and output tokens are service-reported usage, rather than measurements of monetary cost or human effort.
 
 ## Electrical quantities
 
