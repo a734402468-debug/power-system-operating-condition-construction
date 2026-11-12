@@ -1,6 +1,6 @@
 # Results and evaluation
 
-The [experimental setup](../experimental_setup.md) describes the calculation environments, model settings, and equipment labels. These CSV files are reported result tables; their display names follow the paper, while archived case and object identifiers are retained for cross-referencing.
+The [experimental setup](../experimental_setup.md) describes the calculation environment, model settings, and equipment labels. These CSV files are reported result tables; their display names follow the paper, while archived case and object identifiers are retained for cross-referencing.
 
 | Files | Content |
 |---|---|
@@ -13,7 +13,7 @@ The [experimental setup](../experimental_setup.md) describes the calculation env
 | `generation_load_results.csv`, `generation_load_values.csv` | Generation–load outcomes and electrical values, including the initial and corrected results for Case 19 (S-T) |
 | `power_flow_settings.csv` | Recorded simulator options used for sensitivity preparation and power-flow verification |
 | [`numerical_precision.csv`](numerical_precision.csv), [`numerical_precision.md`](numerical_precision.md) | Fixed-candidate results at 1, 0.1, and 0.01 kVA nodal tolerances, including the original Case 12 boundary failure |
-| [`proportional_constraints.md`](proportional_constraints.md) | Mixed proportional-group assembly and recorded offline checks |
+| [`proportional_constraints.md`](proportional_constraints.md) | Equivalent proportional constraints and numerical assembly checks |
 | [`computational_costs.md`](computational_costs.md) | Generation usage and numerical calculation counts |
 
 ## Table notation
