@@ -67,7 +67,7 @@ G1 retains constant-reactive-power control and G2 retains voltage control. Origi
 
 ## Language-model configurations
 
-DeepSeek-V4-Pro is the primary model. Cases 1–12 also use Qwen3.5-122B-A10B, Qwen3.5-35B-A3B, and GPT-6.1-SOL. All four models are accessed through APIs. DeepSeek and both Qwen configurations use temperature 0, top-p 1, disabled reasoning, and a 4096-token output limit. GPT-6.1-SOL uses medium reasoning effort.
+DeepSeek-V4-Pro is the primary model. Cases 1–12 also use Qwen3.5-122B-A10B, Qwen3.5-35B-A3B, and GPT-6.1-SOL. All four models are accessed through APIs. All four model configurations use a 4096-token output limit. DeepSeek and both Qwen configurations use temperature 0, top-p 1, and disabled reasoning; GPT-6.1-SOL uses medium reasoning effort, with reasoning tokens counted toward the output limit.
 
 Each task starts independently. The prompt requests a JSON specification, without an API-enforced JSON schema. Checking references are withheld from model generation and revision feedback. All configurations use the same equipment data, response coefficients, adjustment procedure, and AC acceptance criteria.
 
