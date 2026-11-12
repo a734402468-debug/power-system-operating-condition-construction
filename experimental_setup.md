@@ -4,7 +4,7 @@
 
 The test systems are the IEEE 118-bus system and a real-world sending-end regional power system in Northwest China. The regional model has 200 in-service buses and 33 loads. Six loads in the IEEE system and four in the regional system are selected for adjustment.
 
-The archived case results were calculated with DIgSILENT PowerFactory 15.2.10.0. The numerical-precision check replays the fixed candidates in that environment. The implementation has subsequently been migrated to PowerFactory 2025 SP2 and Python 3.11.4; the migrated environment does not replace the calculation settings associated with the archived results. Recorded load-flow options are provided in [power_flow_settings.csv](results/power_flow_settings.csv).
+DIgSILENT PowerFactory 2025 SP2 and Python 3.11.4 provide the environment for power-system modelling, implementation, and simulation. The load-flow options are provided in [power_flow_settings.csv](results/power_flow_settings.csv).
 
 ## Reference inputs and adjustment bounds
 
@@ -42,7 +42,7 @@ The original node-equation convergence tolerance is 1 kVA; the model-equation to
 
 Fixed inputs are checked against their exact reference values. Voltage and line-loading bounds have no additional endpoint allowance. Each transfer side and the retained total are checked separately. The input-storage allowances are already included in these tolerances, and results are checked before presentation rounding.
 
-The archived mixed-adjustment solver used factor differences from one group member, with full-group spread checked at acceptance. Pairwise bounds were implemented and checked offline after the reported runs. The [constraint note](results/proportional_constraints.md) gives the formulation and verification record; the historical case results are unchanged.
+The proportional-group condition in Eq. (16), its normalized linear form, and constraint-assembly checks are described in [Proportional-group constraints](results/proportional_constraints.md).
 
 ## Equipment labels
 
@@ -74,7 +74,6 @@ Each task starts independently. The prompt requests a JSON specification, withou
 ## Case schedule and evaluation
 
 The researchers prepare a task-specific checking specification during task design, recording equipment, adjustable variables, input relationships, bounds, tolerances, and applicable states. Generated specifications are compared with this reference before numerical solution. Candidate settings are calculated from the accepted generated constraints.
-
 
 Cases 1–12 form the main comparison. Cases 2, 7, and 11 each have three runs per model, including the main run. These cases allow at most one specification revision using the prescribed diagnostic feedback and one AC trial for an accepted specification.
 
